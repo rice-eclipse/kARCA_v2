@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.8,
+          "width": 1.15
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -48,7 +48,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -66,7 +72,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -82,7 +88,7 @@
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
@@ -117,9 +123,9 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.19999999999999998,
+        "min_via_annular_width": 0.049999999999999996,
+        "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -165,8 +171,19 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.0,
+        0.127,
+        0.254,
+        2.54
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -361,7 +378,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
@@ -399,7 +416,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.508,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -409,9 +426,111 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.254,
+        "via_diameter": 1.016,
+        "via_drill": 0.508,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.508,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+10V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.508,
+        "via_diameter": 1.016,
+        "via_drill": 0.508,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.254,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+12V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.54,
+        "via_diameter": 5.08,
+        "via_drill": 2.54,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.508,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+5V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.508,
+        "via_diameter": 1.016,
+        "via_drill": 0.508,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.254,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DRIVER",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.27,
+        "via_diameter": 2.54,
+        "via_drill": 1.27,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.254,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 1.016,
+        "via_drill": 0.508,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.254,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "IC_SMALL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 1.016,
+        "via_drill": 0.508,
         "wire_width": 6
       }
     ],
@@ -422,12 +541,212 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "/SPI_MOSI"
+        "netclass": "+10V",
+        "pattern": "+10V"
       },
       {
-        "netclass": "Default",
-        "pattern": "/SPI_MOSI_OUT"
+        "netclass": "+12V",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "+12V",
+        "pattern": "/regulators/12V_CON"
+      },
+      {
+        "netclass": "+12V",
+        "pattern": "/regulators/12V_PRERECT"
+      },
+      {
+        "netclass": "+12V",
+        "pattern": "/regulators/FAN_POW"
+      },
+      {
+        "netclass": "+5V",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV1_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV1_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV2_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV2_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV3_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV3_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV4_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV4_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV5_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV5_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV6_NEG"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/DRV6_POS"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp/IN_1"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp/IN_2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U24--IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U24-+IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U24-REF)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp1/IN_2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp1/IN_1"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U26--IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U26-+IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U26-REF)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp2/IN_2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp2/IN_1"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp3/IN_2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp3/IN_1"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U27--IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U27-+IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U27-REF)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U29--IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U29-+IN)"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "Net-(U29-REF)"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/MOS1"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/driver_nmos/DRV_POS"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Drivers/MOS2"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/driver_nmos1/DRV_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/MOS3"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/driver_nmos2/DRV_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/driver_nmos3/DRV_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/MOS4"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/driver_nmos4/DRV_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/MOS5"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/IGN_POS"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/IGN_NEG"
+      },
+      {
+        "netclass": "+12V",
+        "pattern": "/Regulators/battery_monitoring/Battery+"
       }
     ]
   },
@@ -530,6 +849,18 @@
       "LC_Amplification3"
     ],
     [
+      "044bcd6a-880d-4ffc-be8b-a03d76768183",
+      "pt_circuitry1"
+    ],
+    [
+      "691cd68e-b9d2-4323-a044-22fc45a3ad38",
+      "pt_circuitry2"
+    ],
+    [
+      "c6078a97-3f1f-4f19-8ed7-752ec56dbc3c",
+      "pt_circuitry3"
+    ],
+    [
       "5f9ebfa6-b6b1-4e29-8ce4-53e1bc3ba1f1",
       "thermocouple_amp"
     ],
@@ -556,6 +887,10 @@
     [
       "2860586f-715f-4870-80c8-f3cf863ca8a9",
       "driver_nmos2"
+    ],
+    [
+      "60027281-032f-4987-83fe-1472a08d0df6",
+      "pt_circuitry"
     ],
     [
       "05cadafe-7a2d-469e-aaad-c97b2b0fe0a7",

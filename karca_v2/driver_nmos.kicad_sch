@@ -105,6 +105,53 @@
         )
       )
     )
+    (symbol "Device:Fuse" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "F" (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Fuse" (at -1.905 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "fuse" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Fuse" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "*Fuse*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Fuse_0_1"
+        (rectangle (start -0.762 -2.54) (end 0.762 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Fuse_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -273,13 +320,13 @@
       )
     )
     (symbol "Simulation_SPICE:NMOS" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "Q" (at 5.08 1.27 0)
+      (property "Reference" "Q10" (at 6.35 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "NMOS" (at 5.08 -1.27 0)
+      (property "Value" "IRF3708" (at 6.35 -1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "" (at 5.08 2.54 0)
+      (property "Footprint" "IRF3708:TO254P1041X444X1930-3" (at 5.08 2.54 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf" (at 0 -12.7 0)
@@ -412,12 +459,12 @@
         )
       )
       (symbol "NMOS_1_1"
-        (pin passive line (at 2.54 5.08 270) (length 2.54)
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
         (pin input line (at -5.08 0 0) (length 2.54)
           (name "G" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 5.08 270) (length 2.54)
+          (name "D" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 2.54 -5.08 90) (length 2.54)
@@ -542,6 +589,10 @@
     (uuid ff8c4a2e-b2b1-4c0d-ae4c-a6d7a4175bf6)
   )
 
+  (wire (pts (xy 76.2 28.575) (xy 76.2 30.48))
+    (stroke (width 0) (type default))
+    (uuid 02472a9f-6c2f-4eb8-b449-610307e71c79)
+  )
   (wire (pts (xy 66.04 30.48) (xy 76.2 30.48))
     (stroke (width 0) (type default))
     (uuid 1b98aaff-a6e6-402c-8b2e-df17cec5b6d3)
@@ -582,10 +633,6 @@
     (stroke (width 0) (type default))
     (uuid c9bfe18b-1209-407b-afaf-f393634e7bce)
   )
-  (wire (pts (xy 76.2 27.94) (xy 76.2 30.48))
-    (stroke (width 0) (type default))
-    (uuid d33f6882-c1ca-4906-a479-f06ca03cbb95)
-  )
   (wire (pts (xy 76.2 38.1) (xy 76.2 40.64))
     (stroke (width 0) (type default))
     (uuid db46cd02-618b-4321-b583-4f018479f18b)
@@ -597,6 +644,10 @@
   (wire (pts (xy 60.96 66.04) (xy 62.23 66.04))
     (stroke (width 0) (type default))
     (uuid e4f39bd6-7975-410b-9df9-040bbb282f9e)
+  )
+  (wire (pts (xy 76.2 19.685) (xy 76.2 20.955))
+    (stroke (width 0) (type default))
+    (uuid e500b62e-545e-4e3d-9f79-f83dfb8efe2c)
   )
   (wire (pts (xy 50.8 66.04) (xy 52.07 66.04))
     (stroke (width 0) (type default))
@@ -632,7 +683,7 @@
   (symbol (lib_id "power:GND") (at 66.04 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 02e9fb74-7fa2-46ea-af23-306a8615a275)
-    (property "Reference" "#PWR0126" (at 66.04 54.61 0)
+    (property "Reference" "#PWR0136" (at 66.04 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 53.34 0)
@@ -648,19 +699,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0126") (unit 1)
+          (reference "#PWR0136") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0129") (unit 1)
+          (reference "#PWR0139") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0132") (unit 1)
+          (reference "#PWR0142") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0135") (unit 1)
+          (reference "#PWR0148") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0138") (unit 1)
+          (reference "#PWR0168") (unit 1)
         )
       )
     )
@@ -669,13 +720,13 @@
   (symbol (lib_id "Device:R_US") (at 66.04 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0684e577-c858-4340-be7f-cc77062a9a63)
-    (property "Reference" "R72" (at 68.58 43.18 0)
+    (property "Reference" "R77" (at 68.58 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "910" (at 68.58 45.72 0)
+    (property "Value" "1k" (at 68.58 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 67.056 44.704 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 67.056 44.704 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 66.04 44.45 0)
@@ -686,19 +737,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R72") (unit 1)
+          (reference "R77") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R76") (unit 1)
+          (reference "R81") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R80") (unit 1)
+          (reference "R85") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R84") (unit 1)
+          (reference "R94") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R88") (unit 1)
+          (reference "R108") (unit 1)
         )
       )
     )
@@ -707,7 +758,7 @@
   (symbol (lib_id "Device:LED") (at 76.2 34.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1a8375a0-79e7-4ed2-9d1b-25597c85c54d)
-    (property "Reference" "D32" (at 80.01 34.6075 90)
+    (property "Reference" "D10" (at 80.01 34.6075 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 80.01 37.1475 90)
@@ -724,19 +775,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "D32") (unit 1)
+          (reference "D10") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "D35") (unit 1)
+          (reference "D13") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "D38") (unit 1)
+          (reference "D16") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "D41") (unit 1)
+          (reference "D19") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "D44") (unit 1)
+          (reference "D23") (unit 1)
         )
       )
     )
@@ -745,13 +796,13 @@
   (symbol (lib_id "Device:R_US") (at 57.15 66.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d24054c-a65b-4931-917a-db7666dfc4d3)
-    (property "Reference" "R74" (at 57.15 59.69 90)
+    (property "Reference" "R79" (at 57.15 59.69 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 57.15 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 57.404 65.024 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 57.404 65.024 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 66.04 0)
@@ -762,19 +813,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R74") (unit 1)
+          (reference "R79") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R78") (unit 1)
+          (reference "R83") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R82") (unit 1)
+          (reference "R87") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R86") (unit 1)
+          (reference "R96") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R90") (unit 1)
+          (reference "R110") (unit 1)
         )
       )
     )
@@ -783,13 +834,13 @@
   (symbol (lib_id "Device:R_US") (at 76.2 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ef8ef48-c304-407f-a8fd-9f762f6c499d)
-    (property "Reference" "R73" (at 78.74 43.18 0)
+    (property "Reference" "R78" (at 78.74 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "910" (at 78.74 45.72 0)
+    (property "Value" "1k" (at 78.74 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 77.216 44.704 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 77.216 44.704 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 76.2 44.45 0)
@@ -800,19 +851,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R73") (unit 1)
+          (reference "R78") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R77") (unit 1)
+          (reference "R82") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R81") (unit 1)
+          (reference "R86") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R85") (unit 1)
+          (reference "R95") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R89") (unit 1)
+          (reference "R109") (unit 1)
         )
       )
     )
@@ -821,13 +872,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 62.23 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4786e3c5-56b5-47ea-b8df-694141801d31)
-    (property "Reference" "TP37" (at 63.5 59.69 0)
+    (property "Reference" "TP49" (at 63.5 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 63.5 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 67.31 66.04 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 67.31 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 67.31 66.04 0)
@@ -837,56 +888,56 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "TP37") (unit 1)
+          (reference "TP49") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "TP38") (unit 1)
+          (reference "TP50") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "TP39") (unit 1)
+          (reference "TP51") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "TP40") (unit 1)
+          (reference "TP54") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "TP41") (unit 1)
+          (reference "TP60") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+12V") (at 76.2 27.94 0) (unit 1)
+  (symbol (lib_id "power:+12V") (at 76.2 19.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48ebe8fc-0e33-4ee3-8b68-75b608113587)
-    (property "Reference" "#PWR0125" (at 76.2 31.75 0)
+    (property "Reference" "#PWR0135" (at 76.2 23.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+12V" (at 76.2 22.86 0)
+    (property "Value" "+12V" (at 76.2 14.605 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 76.2 27.94 0)
+    (property "Footprint" "" (at 76.2 19.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 76.2 27.94 0)
+    (property "Datasheet" "" (at 76.2 19.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0f5b4907-c157-4f50-be11-17bce1b376fc))
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0125") (unit 1)
+          (reference "#PWR0135") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0128") (unit 1)
+          (reference "#PWR0138") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0131") (unit 1)
+          (reference "#PWR0141") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0134") (unit 1)
+          (reference "#PWR0147") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0137") (unit 1)
+          (reference "#PWR0167") (unit 1)
         )
       )
     )
@@ -895,7 +946,7 @@
   (symbol (lib_id "power:GND") (at 76.2 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49ab2064-4793-4fff-9931-847263d8fcdb)
-    (property "Reference" "#PWR0127" (at 76.2 81.28 0)
+    (property "Reference" "#PWR0137" (at 76.2 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.2 80.01 0)
@@ -911,19 +962,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0127") (unit 1)
+          (reference "#PWR0137") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0130") (unit 1)
+          (reference "#PWR0140") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0133") (unit 1)
+          (reference "#PWR0143") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0136") (unit 1)
+          (reference "#PWR0149") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0139") (unit 1)
+          (reference "#PWR0169") (unit 1)
         )
       )
     )
@@ -931,14 +982,14 @@
 
   (symbol (lib_id "Simulation_SPICE:NMOS") (at 73.66 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 52b1c3de-6326-42d2-af51-c349fbc264f1)
-    (property "Reference" "Q2" (at 80.01 64.77 0)
+    (uuid 5401427b-dc0c-48a8-8386-86cd460e869e)
+    (property "Reference" "Q9" (at 80.01 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRF3708" (at 80.01 67.31 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 78.74 63.5 0)
+    (property "Footprint" "IRF3708:TO254P1041X444X1930-3" (at 78.74 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf" (at 73.66 78.74 0)
@@ -953,25 +1004,25 @@
     (property "Sim.Pins" "1=D 2=G 3=S" (at 73.66 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f8a3b9da-22ec-4b3e-92fb-da270897093c))
-    (pin "3" (uuid 2d66f3e0-475f-4df4-97b2-342d68eea9b0))
-    (pin "2" (uuid 20fc84dc-81c3-4924-b657-037aab9d6304))
+    (pin "2" (uuid 6c5284f0-e15d-4027-b104-e95657649b9a))
+    (pin "3" (uuid a0de56d9-4024-40e4-b86b-e517298e27ad))
+    (pin "1" (uuid 83b3c1a1-c102-4318-ba86-80420a86fdba))
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "Q2") (unit 1)
+          (reference "Q9") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "Q3") (unit 1)
+          (reference "Q10") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "Q4") (unit 1)
+          (reference "Q11") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "Q5") (unit 1)
+          (reference "Q12") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "Q6") (unit 1)
+          (reference "Q13") (unit 1)
         )
       )
     )
@@ -980,13 +1031,13 @@
   (symbol (lib_id "Device:R_US") (at 52.07 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 633e99eb-0d99-44a4-bb8a-5a679e7191fa)
-    (property "Reference" "R75" (at 54.61 69.85 0)
+    (property "Reference" "R80" (at 54.61 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 54.61 72.39 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 53.086 71.374 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 53.086 71.374 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 71.12 0)
@@ -997,19 +1048,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R75") (unit 1)
+          (reference "R80") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R79") (unit 1)
+          (reference "R84") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R83") (unit 1)
+          (reference "R88") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R87") (unit 1)
+          (reference "R97") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R91") (unit 1)
+          (reference "R111") (unit 1)
         )
       )
     )
@@ -1018,7 +1069,7 @@
   (symbol (lib_id "Device:D_Schottky") (at 90.17 44.45 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8cdcf614-72d6-4714-ac87-0db193450a47)
-    (property "Reference" "D33" (at 92.71 42.8625 90)
+    (property "Reference" "D11" (at 92.71 42.8625 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "D_Schottky" (at 92.71 45.4025 90)
@@ -1035,19 +1086,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "D33") (unit 1)
+          (reference "D11") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "D36") (unit 1)
+          (reference "D14") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "D39") (unit 1)
+          (reference "D17") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "D42") (unit 1)
+          (reference "D20") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "D45") (unit 1)
+          (reference "D24") (unit 1)
         )
       )
     )
@@ -1056,7 +1107,7 @@
   (symbol (lib_id "Device:LED") (at 66.04 34.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c91d217e-f109-4286-b668-b5228dcd8ca4)
-    (property "Reference" "D31" (at 69.85 34.6075 90)
+    (property "Reference" "D9" (at 69.85 34.6075 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 69.85 37.1475 90)
@@ -1073,19 +1124,57 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "D31") (unit 1)
+          (reference "D9") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "D34") (unit 1)
+          (reference "D12") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "D37") (unit 1)
+          (reference "D15") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "D40") (unit 1)
+          (reference "D18") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "D43") (unit 1)
+          (reference "D22") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:Fuse") (at 76.2 24.765 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid eddd7d2d-ee1e-4b3d-87dd-d124ce5db3ba)
+    (property "Reference" "F2" (at 78.74 23.495 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Fuse" (at 78.74 26.035 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Fuse:Fuse_1812_4532Metric" (at 74.422 24.765 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 24.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 28e29bc9-1723-49cf-bfcd-86294edc09db))
+    (pin "2" (uuid 646a7de7-9f1b-4616-8760-f041315789da))
+    (instances
+      (project "karca_v2"
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
+          (reference "F2") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
+          (reference "F3") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
+          (reference "F4") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
+          (reference "F5") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
+          (reference "F6") (unit 1)
         )
       )
     )

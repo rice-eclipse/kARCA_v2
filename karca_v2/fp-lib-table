@@ -1,0 +1,10 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "500SSP1S2M2QEA")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/500SSP1S2M2QEA")(options "")(descr ""))
+  (lib (name "terminal blocks")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/terminal blocks")(options "")(descr ""))
+  (lib (name "AO3401A")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/AO3401A")(options "")(descr ""))
+  (lib (name "IRF3708")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/IRF3708")(options "")(descr ""))
+  (lib (name "TVS0701DRBR")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/TVS0701DRBR")(options "")(descr ""))
+  (lib (name "USB-B")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/USB-B")(options "")(descr ""))
+  (lib (name "OKL-T6-W12N")(type "KiCad")(uri "C:/Users/laz3r/Documents/KiCad/7.0/footprints/OKL-T6-W12N")(options "")(descr ""))
+)
