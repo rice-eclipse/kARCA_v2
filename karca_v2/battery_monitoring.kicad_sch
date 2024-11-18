@@ -2161,7 +2161,7 @@
     (property "Value" "NUP4202" (at 164.465 72.39 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" (at 161.925 75.565 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 161.925 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF" (at 161.925 75.565 0)

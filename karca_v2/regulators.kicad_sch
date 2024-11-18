@@ -1521,9 +1521,6 @@
   (junction (at 347.726 165.481) (diameter 0) (color 0 0 0 0)
     (uuid 67dfa619-f182-4385-aae9-04c991f80c58)
   )
-  (junction (at 357.505 146.05) (diameter 0) (color 0 0 0 0)
-    (uuid 808103fe-5aaf-4017-a63d-87c56635c6fd)
-  )
   (junction (at 287.909 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 880aea5f-27a8-4c72-96d7-86cb4011864c)
   )
@@ -2044,31 +2041,6 @@
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/d3760e06-a79f-4c5f-b008-48bf6f5622ff"
           (reference "#PWR012") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 357.505 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2846da29-2b59-4cf3-a475-83dad3c49aee)
-    (property "Reference" "#PWR0203" (at 357.505 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 357.505 140.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 357.505 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 357.505 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8dec6022-9cac-4f2d-afe1-a01b49637b28))
-    (instances
-      (project "karca_v2"
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/d3760e06-a79f-4c5f-b008-48bf6f5622ff"
-          (reference "#PWR0203") (unit 1)
         )
       )
     )
