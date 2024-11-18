@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.8,
-          "width": 1.15
+          "drill": 3.2,
+          "height": 3.2,
+          "width": 3.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -123,7 +123,7 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.1746,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
@@ -747,6 +747,34 @@
       {
         "netclass": "+12V",
         "pattern": "/Regulators/battery_monitoring/Battery+"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Pressure Transducers/pt_circuitry3/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Pressure Transducers/pt_circuitry2/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/DRV4_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/DRV3_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/DRV2_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/DRV1_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/SPI.CLK"
       }
     ]
   },
