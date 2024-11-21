@@ -627,7 +627,7 @@
           (reference "#PWR0112") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/60027281-032f-4987-83fe-1472a08d0df6"
-          (reference "#PWR0168") (unit 1)
+          (reference "#PWR0160") (unit 1)
         )
       )
     )
@@ -671,7 +671,7 @@
   (symbol (lib_id "Amplifier_Operational:TLV9304xD") (at 114.046 73.406 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f65fda0-2172-4261-a252-40556fc4f48e)
-    (property "Reference" "U8" (at 114.046 63.246 0)
+    (property "Reference" "U10" (at 114.046 63.246 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLV9304xD" (at 114.046 65.786 0)
@@ -700,16 +700,16 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/044bcd6a-880d-4ffc-be8b-a03d76768183"
-          (reference "U8") (unit 3)
+          (reference "U10") (unit 3)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/691cd68e-b9d2-4323-a044-22fc45a3ad38"
-          (reference "U8") (unit 2)
+          (reference "U10") (unit 2)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/c6078a97-3f1f-4f19-8ed7-752ec56dbc3c"
-          (reference "U8") (unit 1)
+          (reference "U10") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/60027281-032f-4987-83fe-1472a08d0df6"
-          (reference "U8") (unit 4)
+          (reference "U10") (unit 4)
         )
       )
     )
@@ -743,7 +743,7 @@
           (reference "#PWR0111") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/60027281-032f-4987-83fe-1472a08d0df6"
-          (reference "#PWR0167") (unit 1)
+          (reference "#PWR0159") (unit 1)
         )
       )
     )
@@ -777,7 +777,7 @@
           (reference "#PWR0113") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/60027281-032f-4987-83fe-1472a08d0df6"
-          (reference "#PWR0169") (unit 1)
+          (reference "#PWR0161") (unit 1)
         )
       )
     )
@@ -855,7 +855,7 @@
   (symbol (lib_id "Amplifier_Operational:TLV9304xD") (at 191.516 75.946 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid da7946d1-87ff-452b-921a-a95b2123539d)
-    (property "Reference" "U7" (at 191.516 65.786 0)
+    (property "Reference" "U9" (at 191.516 65.786 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLV9304xD" (at 191.516 68.326 0)
@@ -884,16 +884,16 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/044bcd6a-880d-4ffc-be8b-a03d76768183"
-          (reference "U7") (unit 3)
+          (reference "U9") (unit 3)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/691cd68e-b9d2-4323-a044-22fc45a3ad38"
-          (reference "U7") (unit 2)
+          (reference "U9") (unit 2)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/c6078a97-3f1f-4f19-8ed7-752ec56dbc3c"
-          (reference "U7") (unit 1)
+          (reference "U9") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e/60027281-032f-4987-83fe-1472a08d0df6"
-          (reference "U7") (unit 4)
+          (reference "U9") (unit 4)
         )
       )
     )
