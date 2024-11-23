@@ -561,7 +561,7 @@
         "pattern": "/regulators/FAN_POW"
       },
       {
-        "netclass": "+5V",
+        "netclass": "IC_SMALL",
         "pattern": "+5V"
       },
       {
@@ -783,6 +783,18 @@
       {
         "netclass": "IC_SMALL",
         "pattern": "/Load Cells/LC_Amplification/IN2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification2/IN2"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification3/IN1"
+      },
+      {
+        "netclass": "+12V",
+        "pattern": "/Pressure Transducers/12V_Reg"
       }
     ]
   },
