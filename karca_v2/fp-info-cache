@@ -1,4 +1,4 @@
-22655461601633433
+22658929826303453
 500SSP1S2M2QEA
 SW_500SSP1S2M2QEA
 
@@ -92288,12 +92288,26 @@ igbt diode module
 25
 25
 USB-B
+GCT_USB3090-XX-X_REVE
+
+
+0
+9
+9
+USB-B
 GCT_USB3130-XX-X_REVD
 
 
 0
 7
 7
+USB-B
+HRS_ZX62D-B-5P8
+
+
+0
+11
+11
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -93084,14 +93098,14 @@ P-2604-1102
 
 0
 4
-2
+4
 terminal blocks
 P-2604-1104
 
 
 0
 8
-4
+8
 terminal blocks
 P-2604-1108
 
@@ -93105,4 +93119,4 @@ P-2604-1110
 
 0
 20
-10
+20

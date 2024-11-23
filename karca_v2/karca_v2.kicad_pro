@@ -118,7 +118,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
@@ -613,7 +613,7 @@
         "pattern": "/Drivers/DRV6_POS"
       },
       {
-        "netclass": "GND",
+        "netclass": "IC_SMALL",
         "pattern": "GND"
       },
       {
@@ -795,6 +795,66 @@
       {
         "netclass": "+12V",
         "pattern": "/Pressure Transducers/12V_Reg"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp2/in-"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp2/in+"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/thermocouples/thermocouple_amp2/vref"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/TC_4_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/TC_1_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification3/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification2/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Drivers/DRV5_ADC"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Regulators/battery_monitoring/BAT_CUR"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification1/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Load Cells/LC_Amplification/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Pressure Transducers/pt_circuitry/OUT"
+      },
+      {
+        "netclass": "IC_SMALL",
+        "pattern": "/Pressure Transducers/pt_circuitry1/OUT"
+      },
+      {
+        "netclass": "DRIVER",
+        "pattern": "/Drivers/IGN_POS_OUT"
+      },
+      {
+        "netclass": "+5V",
+        "pattern": "/Regulators/BAT_OUT"
       }
     ]
   },

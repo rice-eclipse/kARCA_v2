@@ -1415,6 +1415,11 @@
     (uuid f8041277-31a5-4e2d-b8ff-db636aeef829)
   )
 
+  (label "BAT_CUR" (at 163.195 59.69 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 37cd9346-d510-4545-be54-07acd5b06e7d)
+  )
+
   (hierarchical_label "BAT_MISO" (shape output) (at 209.55 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 18bc673d-5b24-4525-a077-cfe8bc557a7b)
