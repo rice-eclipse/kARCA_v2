@@ -683,7 +683,7 @@
   (symbol (lib_id "power:GND") (at 66.04 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 02e9fb74-7fa2-46ea-af23-306a8615a275)
-    (property "Reference" "#PWR0151" (at 66.04 54.61 0)
+    (property "Reference" "#PWR0147" (at 66.04 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 53.34 0)
@@ -699,19 +699,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0151") (unit 1)
+          (reference "#PWR0147") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0154") (unit 1)
+          (reference "#PWR0150") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0157") (unit 1)
+          (reference "#PWR0153") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0163") (unit 1)
+          (reference "#PWR0159") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0179") (unit 1)
+          (reference "#PWR0175") (unit 1)
         )
       )
     )
@@ -720,7 +720,7 @@
   (symbol (lib_id "Device:R_US") (at 66.04 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0684e577-c858-4340-be7f-cc77062a9a63)
-    (property "Reference" "R81" (at 68.58 43.18 0)
+    (property "Reference" "R82" (at 68.58 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 68.58 45.72 0)
@@ -737,19 +737,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R81") (unit 1)
+          (reference "R82") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R85") (unit 1)
+          (reference "R86") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R89") (unit 1)
+          (reference "R90") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R98") (unit 1)
+          (reference "R99") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R112") (unit 1)
+          (reference "R113") (unit 1)
         )
       )
     )
@@ -796,7 +796,7 @@
   (symbol (lib_id "Device:R_US") (at 57.15 66.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d24054c-a65b-4931-917a-db7666dfc4d3)
-    (property "Reference" "R83" (at 57.15 59.69 90)
+    (property "Reference" "R84" (at 57.15 59.69 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 57.15 62.23 90)
@@ -810,6 +810,44 @@
     )
     (pin "1" (uuid decc20ee-f4ef-4968-aeb9-4d1c76d2bdee))
     (pin "2" (uuid 69079976-85a1-4975-aab0-aef78a78c109))
+    (instances
+      (project "karca_v2"
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
+          (reference "R84") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
+          (reference "R88") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
+          (reference "R92") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
+          (reference "R101") (unit 1)
+        )
+        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
+          (reference "R115") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_US") (at 76.2 44.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2ef8ef48-c304-407f-a8fd-9f762f6c499d)
+    (property "Reference" "R83" (at 78.74 43.18 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1k" (at 78.74 45.72 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 77.216 44.704 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f2d461ec-97b9-47da-b2ba-9785af6ca9b8))
+    (pin "2" (uuid 261e6939-4c77-4b41-8c59-f3a89e6e7b04))
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
@@ -831,48 +869,10 @@
     )
   )
 
-  (symbol (lib_id "Device:R_US") (at 76.2 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2ef8ef48-c304-407f-a8fd-9f762f6c499d)
-    (property "Reference" "R82" (at 78.74 43.18 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1k" (at 78.74 45.72 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 77.216 44.704 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 76.2 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f2d461ec-97b9-47da-b2ba-9785af6ca9b8))
-    (pin "2" (uuid 261e6939-4c77-4b41-8c59-f3a89e6e7b04))
-    (instances
-      (project "karca_v2"
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R82") (unit 1)
-        )
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R86") (unit 1)
-        )
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R90") (unit 1)
-        )
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R99") (unit 1)
-        )
-        (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R113") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Connector:TestPoint") (at 62.23 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4786e3c5-56b5-47ea-b8df-694141801d31)
-    (property "Reference" "TP49" (at 63.5 59.69 0)
+    (property "Reference" "TP45" (at 63.5 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 63.5 60.96 0)
@@ -888,19 +888,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "TP49") (unit 1)
+          (reference "TP45") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "TP50") (unit 1)
+          (reference "TP46") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "TP51") (unit 1)
+          (reference "TP47") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "TP54") (unit 1)
+          (reference "TP50") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "TP60") (unit 1)
+          (reference "TP56") (unit 1)
         )
       )
     )
@@ -909,7 +909,7 @@
   (symbol (lib_id "power:+12V") (at 76.2 19.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48ebe8fc-0e33-4ee3-8b68-75b608113587)
-    (property "Reference" "#PWR0150" (at 76.2 23.495 0)
+    (property "Reference" "#PWR0146" (at 76.2 23.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 76.2 14.605 0)
@@ -925,19 +925,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0150") (unit 1)
+          (reference "#PWR0146") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0153") (unit 1)
+          (reference "#PWR0149") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0156") (unit 1)
+          (reference "#PWR0152") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0162") (unit 1)
+          (reference "#PWR0158") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0178") (unit 1)
+          (reference "#PWR0174") (unit 1)
         )
       )
     )
@@ -946,7 +946,7 @@
   (symbol (lib_id "power:GND") (at 76.2 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49ab2064-4793-4fff-9931-847263d8fcdb)
-    (property "Reference" "#PWR0152" (at 76.2 81.28 0)
+    (property "Reference" "#PWR0148" (at 76.2 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.2 80.01 0)
@@ -962,19 +962,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "#PWR0152") (unit 1)
+          (reference "#PWR0148") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "#PWR0155") (unit 1)
+          (reference "#PWR0151") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "#PWR0158") (unit 1)
+          (reference "#PWR0154") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "#PWR0164") (unit 1)
+          (reference "#PWR0160") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "#PWR0180") (unit 1)
+          (reference "#PWR0176") (unit 1)
         )
       )
     )
@@ -1031,7 +1031,7 @@
   (symbol (lib_id "Device:R_US") (at 52.07 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 633e99eb-0d99-44a4-bb8a-5a679e7191fa)
-    (property "Reference" "R84" (at 54.61 69.85 0)
+    (property "Reference" "R85" (at 54.61 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 54.61 72.39 0)
@@ -1048,19 +1048,19 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-          (reference "R84") (unit 1)
+          (reference "R85") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-          (reference "R88") (unit 1)
+          (reference "R89") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-          (reference "R92") (unit 1)
+          (reference "R93") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-          (reference "R101") (unit 1)
+          (reference "R102") (unit 1)
         )
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-          (reference "R115") (unit 1)
+          (reference "R116") (unit 1)
         )
       )
     )
