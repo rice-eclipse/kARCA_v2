@@ -943,6 +943,7 @@
   (no_connect (at 215.9 82.55) (uuid c5111824-fc44-4937-a9eb-835f5d1fe566))
   (no_connect (at 138.43 93.98) (uuid d178e9c2-99c1-42df-8fb4-ef0f44f1dab9))
   (no_connect (at 151.13 68.58) (uuid f5442f6b-85fa-47be-bbe9-4f676d7b1b58))
+  (no_connect (at 151.13 78.74) (uuid fb0f37eb-c915-4484-bfb0-7d0ef27f7fc9))
 
   (bus_entry (at 127 81.28) (size 2.54 2.54)
     (stroke (width 0) (type default))
@@ -1254,10 +1255,6 @@
   (hierarchical_label "ADC2_CS" (shape output) (at 151.13 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a8fdfe53-510f-467a-a9bd-04cbf08b3574)
-  )
-  (hierarchical_label "LC_SELECT" (shape output) (at 151.13 78.74 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid aeb26e23-2fd7-4cdc-9bf0-14c68d67492e)
   )
   (hierarchical_label "SPI{MOSI,MISO,CLK}" (shape bidirectional) (at 127 90.17 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
