@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "kARCA 2.0 Engine Control System")
+    (date "2024-12-16")
+    (rev "1.1")
+    (company "Rice Eclipse")
+    (comment 1 "Designed by Deepak Narayan")
+    (comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
+  )
+
   (lib_symbols
     (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "H" (at 0 5.08 0)
@@ -324,10 +333,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 172a918c-9ec0-4468-b367-558d49e42108)
   )
-  (text "kARCA 2.0" (at 34.29 22.86 0)
-    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
-    (uuid 77c3e90a-11e3-4936-adc2-cf489cacd825)
-  )
   (text "Data Acquisition and Control System for Rice Eclipse's Hybrid Rocket Motors"
     (at 31.75 27.94 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
@@ -408,7 +413,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 228.6 24.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 44914964-e02a-400d-aa68-df8c4726c0dd)
     (property "Reference" "H1" (at 231.14 22.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -432,7 +437,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 228.6 35.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid c58d2d8c-477f-4a52-aa83-7523f35ff8a2)
     (property "Reference" "H3" (at 231.14 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -456,7 +461,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 228.6 29.21 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid d83b4278-6dff-4c25-9baf-6db52ffb1aed)
     (property "Reference" "H2" (at 231.14 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -480,7 +485,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 228.6 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid e29f1d46-5f0e-408d-a638-6a0ce5ab9172)
     (property "Reference" "H4" (at 231.14 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))

@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "kARCA 2.0 Engine Control System")
+    (date "2024-12-16")
+    (rev "1.1")
+    (company "Rice Eclipse")
+    (comment 1 "Designed by Deepak Narayan")
+    (comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
+  )
+
   (lib_symbols
     (symbol "Connector:Screw_Terminal_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
@@ -1365,9 +1374,9 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 219.71 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 03d3da53-fc30-4b6d-acab-ef744b54ba30)
-    (property "Reference" "J11" (at 222.25 142.24 0)
+    (property "Reference" "J10" (at 222.25 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Screw_Terminal_01x04" (at 222.25 144.78 0)
@@ -1386,7 +1395,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "J11") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -1395,7 +1404,7 @@
   (symbol (lib_id "power:+12V") (at 214.63 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1534361d-bde7-4c59-ba43-adad0663d221)
-    (property "Reference" "#PWR067" (at 214.63 139.7 0)
+    (property "Reference" "#PWR068" (at 214.63 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 214.63 130.81 0)
@@ -1411,7 +1420,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -1420,7 +1429,7 @@
   (symbol (lib_id "power:GND") (at 78.74 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1f339863-8a4d-45de-97f4-74f6fed70041)
-    (property "Reference" "#PWR072" (at 78.74 186.69 0)
+    (property "Reference" "#PWR073" (at 78.74 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 185.42 0)
@@ -1436,16 +1445,16 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR072") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 178.435 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 33142628-7f1a-4817-86ad-35d9f48a2e40)
-    (property "Reference" "J12" (at 180.975 151.13 0)
+    (property "Reference" "J11" (at 180.975 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Buzzer" (at 175.895 156.21 0)
@@ -1462,7 +1471,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "J12") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -1471,7 +1480,7 @@
   (symbol (lib_id "power:GND") (at 140.335 174.625 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37b0df2e-33f7-4528-8a02-753481b6feb5)
-    (property "Reference" "#PWR071" (at 140.335 180.975 0)
+    (property "Reference" "#PWR072" (at 140.335 180.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.335 179.705 0)
@@ -1487,7 +1496,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR071") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -1496,7 +1505,7 @@
   (symbol (lib_id "power:GND") (at 68.58 153.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58ca58ec-01c5-4a39-b9c2-fbdb28bd0697)
-    (property "Reference" "#PWR069" (at 68.58 160.02 0)
+    (property "Reference" "#PWR070" (at 68.58 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.58 158.75 0)
@@ -1512,7 +1521,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -1521,7 +1530,7 @@
   (symbol (lib_id "power:+12V") (at 78.74 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5a52ce40-bf71-4f9e-b010-25f85b001632)
-    (property "Reference" "#PWR066" (at 78.74 132.08 0)
+    (property "Reference" "#PWR067" (at 78.74 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 80.645 125.095 0)
@@ -1537,7 +1546,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -1558,6 +1567,9 @@
     (property "Datasheet" "~" (at 68.58 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C125084" (at 68.58 139.7 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 89ee4555-7181-4177-ad2b-2a277d1deabe))
     (pin "2" (uuid 8582dbd8-b0cd-4225-a4a0-0f14460d2cb2))
     (instances
@@ -1570,7 +1582,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x10") (at 237.49 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 6acf9e9d-aa1c-4635-8dd6-f0bf2c2b0e4c)
     (property "Reference" "J9" (at 240.03 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1618,6 +1630,9 @@
     (property "Datasheet" "~" (at 78.74 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C55996" (at 78.74 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 34b6be66-a9bb-4163-8313-479026636fd7))
     (pin "2" (uuid 7efc03a6-9c3c-4ff7-a616-f3b842c92b66))
     (instances
@@ -1632,7 +1647,7 @@
   (symbol (lib_id "Device:R_US") (at 68.58 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e46846f-8aa1-432b-92f4-66dd3f0eb497)
-    (property "Reference" "R13" (at 71.12 148.59 0)
+    (property "Reference" "R14" (at 71.12 148.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 71.12 151.13 0)
@@ -1649,7 +1664,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R13") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -1658,7 +1673,7 @@
   (symbol (lib_id "Device:R_US") (at 140.335 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d52ba66-e20b-4e44-a044-b84eae5618b1)
-    (property "Reference" "R15" (at 142.875 156.21 0)
+    (property "Reference" "R16" (at 142.875 156.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 142.875 158.75 0)
@@ -1675,7 +1690,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R15") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1684,7 +1699,7 @@
   (symbol (lib_id "power:GND") (at 214.63 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a39eb795-8fbf-45f5-919d-50915e7430ed)
-    (property "Reference" "#PWR068" (at 214.63 156.21 0)
+    (property "Reference" "#PWR069" (at 214.63 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 154.94 0)
@@ -1700,7 +1715,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -1732,7 +1747,7 @@
   )
 
   (symbol (lib_id "Simulation_SPICE:NMOS") (at 76.2 171.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid b8140669-3d28-4378-aa35-b28478332954)
     (property "Reference" "Q3" (at 81.915 170.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1740,7 +1755,7 @@
     (property "Value" "IRF3708" (at 81.915 172.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "IRF3708:TO254P1041X444X1930-3" (at 81.28 168.91 0)
+    (property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical" (at 81.28 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf" (at 76.2 184.15 0)
@@ -1770,7 +1785,7 @@
   (symbol (lib_id "Device:R_US") (at 140.335 169.545 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bd3d8f90-e0bb-4a1f-aaea-e8dba94324fe)
-    (property "Reference" "R16" (at 142.875 168.275 0)
+    (property "Reference" "R17" (at 142.875 168.275 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5k" (at 142.875 170.815 0)
@@ -1787,7 +1802,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R16") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1796,7 +1811,7 @@
   (symbol (lib_id "Device:R_US") (at 78.74 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bfb45074-fb96-464b-932a-0e4e661215f1)
-    (property "Reference" "R14" (at 81.28 148.59 0)
+    (property "Reference" "R15" (at 81.28 148.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 81.28 151.13 0)
@@ -1813,7 +1828,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R14") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1834,6 +1849,9 @@
     (property "Datasheet" "~" (at 78.74 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C14641" (at 78.74 139.7 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 92913091-1d21-4b02-9d13-1e2cac187374))
     (pin "2" (uuid 87813d02-f59e-41c4-b6ef-f7850bf69df2))
     (instances
@@ -1848,7 +1866,7 @@
   (symbol (lib_id "power:GND") (at 173.355 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d32d9e27-fd9a-47ce-9275-bfaace195cd5)
-    (property "Reference" "#PWR070" (at 173.355 162.56 0)
+    (property "Reference" "#PWR071" (at 173.355 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.355 161.29 0)
@@ -1864,7 +1882,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "#PWR070") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -1873,7 +1891,7 @@
   (symbol (lib_id "Device:R_US") (at 59.055 171.45 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e540a678-83d8-466e-91d0-90b26441e17c)
-    (property "Reference" "R17" (at 59.055 165.1 90)
+    (property "Reference" "R18" (at 59.055 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 59.055 167.64 90)
@@ -1890,7 +1908,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R17") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -1899,7 +1917,7 @@
   (symbol (lib_id "Device:R_US") (at 53.975 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f51f1bc8-53b5-4439-8183-186b58d2200b)
-    (property "Reference" "R18" (at 56.515 175.26 0)
+    (property "Reference" "R19" (at 56.515 175.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 56.515 177.8 0)
@@ -1916,16 +1934,16 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "R18") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 165.1 125.73 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid f758d55c-97c1-4bfb-be91-6e105e535712)
-    (property "Reference" "J10" (at 170.815 124.46 90)
+    (property "Reference" "E1" (at 170.815 124.46 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Keyhole ignition switch" (at 170.815 127 90)
@@ -1942,7 +1960,7 @@
     (instances
       (project "karca_v2"
         (path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148"
-          (reference "J10") (unit 1)
+          (reference "E1") (unit 1)
         )
       )
     )

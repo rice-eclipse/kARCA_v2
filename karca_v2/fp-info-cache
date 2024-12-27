@@ -1,18 +1,4 @@
-22660663779382204
-500SSP1S2M2QEA
-SW_500SSP1S2M2QEA
-
-
-0
-3
-3
-4628
-FUSE_4628
-
-
-0
-2
-2
+22664132517431957
 AO3401A
 SOT23-3
 
@@ -65470,13 +65456,6 @@ net tie
 0
 4
 4
-OKL-T6-W12N
-MURATA_OKL-T-6-W12N-C_0
-Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V - - 6A 4.5V - 14V Input
-
-0
-12
-12
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
@@ -93099,31 +93078,66 @@ Varistor VF
 0
 2
 2
-terminal blocks
+custom-footprints
+FUSE_4628
+
+
+0
+2
+2
+custom-footprints
+MURATA_OKL-T-6-W12N-C_0
+Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V - - 6A 4.5V - 14V Input
+
+0
+12
+12
+custom-footprints
 P-2604-1102
 
 
 0
 4
 4
-terminal blocks
+custom-footprints
 P-2604-1104
 
 
 0
 8
 8
-terminal blocks
+custom-footprints
 P-2604-1108
 
 
 0
 16
 16
-terminal blocks
+custom-footprints
 P-2604-1110
 
 
 0
 20
 20
+custom-footprints
+SW_500SSP1S2M2QEA
+
+
+0
+3
+3
+logos
+eclipse_logo
+
+
+0
+0
+0
+logos
+karca_logo
+
+
+0
+0
+0
