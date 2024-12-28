@@ -1,0 +1,42 @@
+Intended Change,Importance,Category,Workload,Concerns,Updates
+Add a transistor for the heartbeat light (Pi can't supply enough current),,,,,Added PN222A BJT to control  HBT LED
+Remove +10V rail altogether,,,,,Done. Power plane only has 5V. 12V supplied through traces
+Fix PT feedback,,,,,Replaced LM324 Op-Amp with the TLV9301 Rail-to-rail op-amp
+Find better supplier for lever terminal blocks,,,,,Wago 2604 series
+Add more test pads,,,,,58 total test points
+Add a ground test pad,,,,,Done
+"Figure out how to deal with high thermal mass, maybe by making the thermal reliefs thinner?",,,,,Replaced LDO with low-noise switching regulator module to reduce power dissipation
+Reverse the reversed power switch footprints,,,,,Done
+Remove the unnecessary third ADC,,,,,Done
+Think about yellow vs. white LEDs for driver actuation indicator,,,,,Replace yellow with green LED
+"Switch mounting holes to #6 screws instead of #4, and make sure they line up with the box pitch",,,,,Done
+Add explicit ports for strain gauges??,,,,,
+Redo wiring so GND is pin 1 on XLR connectors (backwards compatibility with Mk1.1 is no longer needed),,,,,
+Fix LC silkscreen labels,,,,,
+Add a fuse or breaker for the main battery,,,,,Added 10A fuse
+"Implement adjustable LC gain, maybe just a selector switch?",,,,,Added a selection jumper.  May need to replace fixed resistors with Varistors to modify gain after calibration
+Make layout tweaks for soldering iron accessibility?,,,,,
+Fix inamp feedback circuit,,,,,Replaced MCP6N11 in-amp with AD8223 in-amp for higher Gain-bandwidth product
+Replace LPFs with rail-to-rail opamps,,,,,Replaced LM324s with TLV9301
+"Try to find the source of the short on kARCA v1, and fix it on new version",,,,,Revised power distribution entirely
+Continuity detection for valve drivers,,,,,INA180 Current sense amplifier to monitor driver current
+Continuity detection for ignition driver,,,,,Test continuity using a small test current
+Battery voltage readout,,,,,Done. Used a voltage divider with buffer
+Driver current sensors?,,,,,INA180 Current sense amplifier
+Main power input current sensor,,,,,Done. Used INA180 current-sense amplifier
+Add a real-time clock,,,,,
+Make second LC amplifier add reference voltage instead of first,,,,,
+Maybe add onboard thermocouple amplification?,,,,Heat generated on board could affect the cold junction compensation of the IC,Done
+Change PT amplification circuit to use full scale?,,,,Not sure this is possible without higher supply voltages to support a 250Ohm shunt,Modified shunt resistor to 30 ohms and PT gain to 8. (Res = 0.31psi)
+Add insertable jumper/keyhole for arming ignition?,,,,,Done
+Put buzzer on the board?,,,,,Done
+"Fix 5-pin XLR wiring colors (green should be ground), and pin 1 should always be ground",,,,,
+"Figure out why 10V regulator didn't work, definitely get rid of it if we can't",,,,,Removed it
+Add unity-gain amps on the shunt values in order to prevent the impedance of the amplifier from letting current leak in from the PT,,,,,Added TLV930x amps as a buffer between the shunt and active filter
+Switch to XT30s for outside power connectors?,,,,,
+Get a smaller box?,,,,,
+Switch to an inamp which JLC has in-stock so we don't have to solder any SMD components,,,,,AD8223 is in stock
+"""The pressure transducer amplifier spiked periodically. Removing the anti-aliasing capacitors fixed this. My current guess is that the capacitors were small enough to induce oscillations caused by the slew rate of the opamp""",,,,,Switched to an op-amp with 3V/us slew rate (the old one had a 0.5V/us slew rate)
+,,,,,
+Other Changes,Category,,,,
+Replaced FQP30N06  MOS with IRF3708 mos (<30mOhm Rds @ Vgs of 2.8V so it can be turned on by the Pi GPIO directly),Drivers,,,,
