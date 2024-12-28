@@ -1,0 +1,65 @@
+Circuit: * C:\Users\laz3r\Documents\Eclipse\kARCA_v2\karca_v2\Docs\Simulations\Load_Cell.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:3      d:u1:4      d:u1:5      d:u1:6      d:u1:7
+Model:    u1:d        u1:d        u1:d        u1:d        u1:d
+Id:     -1.23e-12   -2.34e-12   -1.24e-12   -2.33e-12   -2.51e-12
+Vd:     -1.22e+00   -2.33e+00   -1.23e+00   -2.32e+00   -2.50e+00
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u1:8      d:u1:9      d:u1:10     d:u1:11     d:u1:12
+Model:    u1:d        u1:d        u1:d        u1:d        u1:d
+Id:     -2.51e-12   -2.51e-12   -2.51e-12   -4.16e-12    1.68e-02
+Vd:     -2.50e+00   -2.50e+00   -2.50e+00   -4.15e+00    7.28e-01
+Req:     1.00e+12    1.00e+12    1.00e+12    1.00e+12    1.54e+00
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u1:13     d:u1:14     d:u1:15     d:u1:16
+Model:    u1:d        u1:d        u1:d        u1:d
+Id:     -4.71e-12    1.07e-09   -2.83e-12   -9.89e-13
+Vd:     -4.70e+00    3.00e-01   -2.82e+00   -9.79e-01
+Req:     1.00e+12    2.42e+07    1.00e+12    1.00e+12
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+                        --- Bipolar Transistors ---
+Name:     q:u1:1      q:u1:2
+Model:    u1:pnp      u1:pnp
+Ib:       9.89e-12    9.89e-12
+Ic:      -2.00e-06   -2.00e-06
+Vbe:     -6.13e-01   -6.13e-01
+Vbc:      1.25e+01    1.25e+01
+Vce:     -1.31e+01   -1.31e+01
+BetaDC:  -2.02e+05   -2.02e+05
+Gm:       7.73e-05    7.73e-05
+Rpi:      1.28e+10    1.28e+10
+Rx:       0.00e+00    0.00e+00
+Ro:       1.00e+10    1.00e+10
+Cbe:      0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00
+Cjs:      0.00e+00    0.00e+00
+BetaAC:   9.88e+05    9.88e+05
+Cbx:      0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00
+
+
+
+Date: Sat Dec 28 00:22:27 2024
+Total elapsed time: 0.318 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 13
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 88
+fillins = 28
+solver = Normal
+Avg thread counts: 16.0/0.0/16.0/16.0
+Matrix Compiler1: 3.77 KB object code size
+Matrix Compiler2: 6.77 KB object code size

@@ -1,0 +1,53 @@
+Circuit: * C:\Users\laz3r\Documents\Eclipse\kARCA_v2\karca_v2\Docs\Simulations\Draft2.asc
+
+WARNING: Less than two connections to node u1:_u43:nsgnvicm1.  This node is used by e:u1:_u43:z1.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.00100083
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+Gmin = 0.00100083
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 94.2028%
+Source Step = 94.2324%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 94.2028%
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 40.0607 s.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:   d:u1:_d1   d:u1:_u37:1 d:u1:_u37:2
+Model:  u1:dideal  u1:_u37:dvn u1:_u37:dvn
+Id:     -6.16e-28    1.00e-02    1.00e-02
+Vd:     -4.44e-16    8.34e-01    8.34e-01
+Req:     7.21e+11    2.59e+00    2.59e+00
+CAP:     0.00e+00    0.00e+00    0.00e+00
+
+
+Fatal Error: Analysis Failed: Iteration limit reached
