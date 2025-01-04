@@ -25,6 +25,6 @@ Schematics: [karca_v2/Docs/Schematics](https://github.com/rice-eclipse/kARCA_v2/
 
 Spice Simulations: [karca_v2/Docs/Simulations](https://github.com/rice-eclipse/kARCA_v2/tree/main/karca_v2/Docs/Simulations)
 
-Board Files: [karca_v2/Docs/Board_Files]()
+Board Files: [karca_v2/Docs/Board_Files](https://github.com/rice-eclipse/kARCA_v2/tree/main/karca_v2/Docs/Board_Files)
 
 

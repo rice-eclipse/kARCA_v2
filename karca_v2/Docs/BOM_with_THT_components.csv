@@ -1,0 +1,15 @@
+Comment,Designator,Link,Price per unit,Units,Total Price,,,Status,
+P-2604-1102,"J1,J2, J11, E1",,,,,,,,Arrived
+P-2604-1104,J10,,,,,,,,Purchased
+P-2604-1108,"J4,J5,J8",,,,,,,,Not yet purchased
+P-2604-1110,J6,,,,,,,,
+Micro USB-B Molex-1050171001,J3,link,2.14,1,,,,,
+2x20 pin header(P=2.00mm),J7,,,,,,,,
+OKL-T6_W12N-C,MD1,link,9.27,1,,,,,
+10A Fuse:4628,F1,link,1.22,1,,,,,
+Diode: 1N5822RLG: DO-201AD,D1,link,1.38,1,,,,,
+1x03 Jumper Pin headers (P=2.00mm),"JP1,JP2,JP3,JP4,JP5",,,,,,,,
+PN2222A (TO-92),Q2,,,,,,,,
+IRF3708 (TO-220-3),"Q3, Q4, Q5, Q6, Q7, Q8",LINK,7.69,10,,,,,
+30k potentiometer (Bourns_3296W_Vertical),RV1,link,2.47,1,,,,,
+500SSP1S2M2QEA SPST Switch,"SW1, SW2, SW3",link,5.3,3,,,,,

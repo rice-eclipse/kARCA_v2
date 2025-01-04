@@ -40,3 +40,4 @@ Switch to an inamp which JLC has in-stock so we don't have to solder any SMD com
 ,
 Other Changes,
 Replaced FQP30N06  MOS with IRF3708 mos (<30mOhm Rds @ Vgs of 2.8V so it can be turned on by the Pi GPIO directly),
+"Reduced cutoff frequency to 1.5kHz to ensure sufficient nose attenuation at 5kHz, while providing sufficient bandwidth for 1 sample/second",

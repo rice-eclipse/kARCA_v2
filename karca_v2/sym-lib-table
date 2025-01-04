@@ -1,4 +1,8 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "karca_lib")(type "KiCad")(uri "${KIPRJMOD}/karca_lib.kicad_sym")(options "")(descr ""))
-)
+- Motors and props
+- Motor Servo rotation torque
+- Configuring ardupilot and stuff
+- PCB for power supplies
+- Connecting computer vision with ardupilot
+- Simulations 
+
+
