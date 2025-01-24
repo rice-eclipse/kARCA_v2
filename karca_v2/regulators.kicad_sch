@@ -2774,7 +2774,7 @@
     (property "Reference" "D1" (at 58.039 65.659 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1N5822RLG" (at 58.039 68.199 0)
+    (property "Value" "90SQ035" (at 58.039 68.199 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" (at 58.039 72.009 0)
