@@ -4697,9 +4697,9 @@
 		(at 213.36 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "fa0262e7-6213-46f8-864c-9826f961eeed")
 		(property "Reference" "U13"

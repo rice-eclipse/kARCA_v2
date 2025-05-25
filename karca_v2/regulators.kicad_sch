@@ -7198,9 +7198,9 @@
 		(at 34.163 72.009 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b36fee69-b5fb-487b-aec1-429c560a929d")
 		(property "Reference" "F1"
