@@ -8116,7 +8116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nNon-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V - - 6A 4.5V - 14V Input\n"
+		(property "Description" "Non-Isolated PoL Module DC DC Converter 1 Output 0.591 ~ 5.5V - - 6A 4.5V - 14V Input"
 			(at 217.17 104.14 0)
 			(effects
 				(font
