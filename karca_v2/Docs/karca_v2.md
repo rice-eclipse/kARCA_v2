@@ -77,7 +77,7 @@ Thermocouples output a very small voltage signal that is proportional to the tem
  ### Board Layout
  The board is 25cm x 14.5cm since space wasn't a major concern. Components were grouped according to their function and were spaced out since being able to modify traces and easily replace components by hand were priorities.
 
- The board consists of 4 layers: SIGNAL-GND-PWR-SIGNAL. This keeps the signal traces close to a reference plane. The power plane is much simpler than that of the original kARCA design; it only consists of a single 5V plane and the 12V is supplied using traces. This prevents potential signal deterioration due to signals crossing split powe places.
+ The board consists of 4 layers: SIGNAL-GND-PWR-SIGNAL. This keeps the signal traces close to a reference plane. The power plane is much simpler than that of the original kARCA design; it only consists of a single 5V plane and the 12V is supplied using traces. This prevents potential signal deterioration due to signals crossing split power planes.
 
  All the components are mounted on the top layer.
 
