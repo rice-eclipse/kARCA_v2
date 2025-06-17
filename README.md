@@ -7,7 +7,7 @@ In addition, various components have been replaced for updated ICs and the power
 
 A detailed description of the changes can be found on  [karca_v2/Docs/changelog](https://github.com/rice-eclipse/kARCA_v2/blob/main/karca_v2/Docs/kARCA_v2_Changelog.csv)
 
-Detailed documentation on the circuit board can be found on [karca_v2/Docs/main_documentation]()
+Detailed documentation on the circuit board can be found on [karca_v2/Docs/main_documentation](https://github.com/rice-eclipse/kARCA_v2/tree/main/karca_v2/Docs/karca_v2.md)
 
 ## Download and Usage
 Download [KiCAD](https://www.kicad.org/download/)
