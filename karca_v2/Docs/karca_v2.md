@@ -48,7 +48,7 @@ The single-ended signal is then filtered using a unity-gain active filter with a
 A pressure transducer is a 4-20mA device. It outputs a current that varies linearly with the measured pressure (4mA corresponds to 0 psig; 20mA corresponds to 1000psig). It usually consists of a wheatstone bridge circuit like a load cell and a current loop transmitter that converts the voltage to a current. The current signal provides stronger noise immunity. 
 
 ![Pressure transducer circuit](readme_images/pt_ops.png)
-he signal is converted back to a voltage using a $30\Omega$ shunt resistor. This results in a voltage range of 0.12V to 0.6V. A low shunt resistance is necessary to minimize the voltage drop as the pressure transducers need a minimum of 8V to operate.
+The signal is converted back to a voltage using a $30\Omega$ shunt resistor. This results in a voltage range of 0.12V to 0.6V. A low shunt resistance is necessary to minimize the voltage drop as the pressure transducers need a minimum of 8V to operate.
 
 The signal is amplified with a gain of 8 using an active filter with a cutoff frequency of $1.5kHz$. Therefore the full voltage range is from 0.96V to 4.8V, corresponding to a resolution of 0.31psi.
 
@@ -75,7 +75,7 @@ Thermocouples output a very small voltage signal that is proportional to the tem
 
 
  ### Board Layout
- The board is 25cm x 14.5cm since space wasn't a major concern. Components were grouped according to their function and were spaced out since being able to modify traces and easily replace components by hand was a priority.
+ The board is 25cm x 14.5cm since space wasn't a major concern. Components were grouped according to their function and were spaced out since being able to modify traces and easily replace components by hand were priorities.
 
  The board consists of 4 layers: SIGNAL-GND-PWR-SIGNAL. This keeps the signal traces close to a reference plane. The power plane is much simpler than that of the original kARCA design; it only consists of a single 5V plane and the 12V is supplied using traces. This prevents potential signal deterioration due to signals crossing split powe places.
 
