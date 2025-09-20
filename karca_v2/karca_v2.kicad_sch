@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "29cf4797-56f2-4f57-ae95-7df639362e3c")
 	(paper "A4")
 	(title_block
@@ -94,7 +94,43 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 220.98 16.51)
+		(end 274.32 49.53)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d83f7949-f38a-46dc-b288-cd713061cdb3)
+	)
+	(text "Mounting Holes\n"
+		(exclude_from_sim no)
+		(at 257.81 19.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "172a918c-9ec0-4468-b367-558d49e42108")
+	)
+	(text "Data Acquisition and Control System for Rice Eclipse's Hybrid Rocket Motors"
+		(exclude_from_sim no)
+		(at 31.75 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5b9ecba-dc03-4bca-b5e6-06879756feee")
 	)
 	(junction
 		(at 115.57 106.68)
@@ -753,41 +789,6 @@
 		)
 		(uuid "fe8aa853-f806-4956-ad2d-ab255d6931e9")
 	)
-	(rectangle
-		(start 220.98 16.51)
-		(end 274.32 49.53)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid d83f7949-f38a-46dc-b288-cd713061cdb3)
-	)
-	(text "Mounting Holes\n"
-		(exclude_from_sim no)
-		(at 257.81 19.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "172a918c-9ec0-4468-b367-558d49e42108")
-	)
-	(text "Data Acquisition and Control System for Rice Eclipse's Hybrid Rocket Motors"
-		(exclude_from_sim no)
-		(at 31.75 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5b9ecba-dc03-4bca-b5e6-06879756feee")
-	)
 	(label "SPI{MOSI,MISO,CLK}"
 		(at 115.57 96.52 180)
 		(effects
@@ -1226,6 +1227,10 @@
 	(sheet
 		(at 54.61 172.085)
 		(size 38.1 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1255,43 +1260,43 @@
 		)
 		(pin "TC_2" output
 			(at 54.61 184.15 180)
+			(uuid "a5d1f3c0-37e1-41e5-9273-c2958ee2d535")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a5d1f3c0-37e1-41e5-9273-c2958ee2d535")
 		)
 		(pin "TC_1" output
 			(at 54.61 180.975 180)
+			(uuid "39e54aec-25a1-4d49-bcb6-3599d429be2a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "39e54aec-25a1-4d49-bcb6-3599d429be2a")
 		)
 		(pin "TC_4" output
 			(at 54.61 189.865 180)
+			(uuid "1669ac74-793e-49d3-8e7e-7b31327d7dc1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1669ac74-793e-49d3-8e7e-7b31327d7dc1")
 		)
 		(pin "TC_3" output
 			(at 54.61 186.69 180)
+			(uuid "7521c473-0dcd-4256-86b3-bd6b4775e0bb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7521c473-0dcd-4256-86b3-bd6b4775e0bb")
 		)
 		(instances
 			(project "karca_v2"
@@ -1304,6 +1309,10 @@
 	(sheet
 		(at 215.9 95.25)
 		(size 52.07 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1333,133 +1342,133 @@
 		)
 		(pin "DRV2_CTL" input
 			(at 215.9 109.22 180)
+			(uuid "8c379e24-7aea-4bcf-8ce3-633b9ff63489")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8c379e24-7aea-4bcf-8ce3-633b9ff63489")
 		)
 		(pin "DRV1_CTL" input
 			(at 215.9 106.68 180)
+			(uuid "b552167c-8ff3-44aa-898f-560d6b1637d5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b552167c-8ff3-44aa-898f-560d6b1637d5")
 		)
 		(pin "DRV3_CTL" input
 			(at 215.9 111.76 180)
+			(uuid "e5194fb4-4f11-4676-89bf-72a532f9c1dd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e5194fb4-4f11-4676-89bf-72a532f9c1dd")
 		)
 		(pin "DRV5_CTL" input
 			(at 215.9 116.84 180)
+			(uuid "83493cd5-6f49-4f59-8887-53b6e3d68ffa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "83493cd5-6f49-4f59-8887-53b6e3d68ffa")
 		)
 		(pin "DRV4_CTL" input
 			(at 215.9 114.3 180)
+			(uuid "93cfac5d-91b7-413d-b447-1e40ad7f4909")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "93cfac5d-91b7-413d-b447-1e40ad7f4909")
 		)
 		(pin "IGN_CTL" input
 			(at 215.9 119.38 180)
+			(uuid "08712c2c-97bc-4800-8ea9-ae5d81718fd6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "08712c2c-97bc-4800-8ea9-ae5d81718fd6")
 		)
 		(pin "IGN_CONT" output
 			(at 215.9 123.19 180)
+			(uuid "458fb04d-8ca4-4b0e-b6ab-fa9acfd16be8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "458fb04d-8ca4-4b0e-b6ab-fa9acfd16be8")
 		)
 		(pin "DRV5_TVS" output
 			(at 229.235 125.73 270)
+			(uuid "c182c131-4d82-46fb-b53a-aa5afd5efb1d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c182c131-4d82-46fb-b53a-aa5afd5efb1d")
 		)
 		(pin "DRV1_ADC" output
 			(at 267.97 110.49 0)
+			(uuid "4e25deb1-c76a-420d-97f9-e1c153fd70fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4e25deb1-c76a-420d-97f9-e1c153fd70fd")
 		)
 		(pin "DRV2_ADC" output
 			(at 267.97 113.03 0)
+			(uuid "39da0a10-ef69-45c6-8c6a-109a95d857de")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "39da0a10-ef69-45c6-8c6a-109a95d857de")
 		)
 		(pin "DRV3_ADC" output
 			(at 267.97 116.205 0)
+			(uuid "59d23f01-cc89-4447-9c36-cdecdf0cf032")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "59d23f01-cc89-4447-9c36-cdecdf0cf032")
 		)
 		(pin "DRV4_ADC" output
 			(at 267.97 118.745 0)
+			(uuid "da2ce76f-262a-48a3-a0d2-d01317ca7c51")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "da2ce76f-262a-48a3-a0d2-d01317ca7c51")
 		)
 		(pin "DRV5_ADC" output
 			(at 267.97 121.285 0)
+			(uuid "0be460f2-a280-43c0-bcce-a955c76ae9f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0be460f2-a280-43c0-bcce-a955c76ae9f6")
 		)
 		(instances
 			(project "karca_v2"
@@ -1472,6 +1481,10 @@
 	(sheet
 		(at 55.88 129.54)
 		(size 46.99 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1501,83 +1514,83 @@
 		)
 		(pin "CS" input
 			(at 102.87 147.955 0)
+			(uuid "5f5efb75-9347-4f73-9509-7f8acbe418bf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5f5efb75-9347-4f73-9509-7f8acbe418bf")
 		)
 		(pin "PT_CLK" input
 			(at 102.87 142.24 0)
+			(uuid "48024bcb-5621-41b3-82fd-18852111032a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "48024bcb-5621-41b3-82fd-18852111032a")
 		)
 		(pin "PT_MOSI" input
 			(at 102.87 137.16 0)
+			(uuid "5447c889-9984-456c-a0c7-39da1c0519d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5447c889-9984-456c-a0c7-39da1c0519d0")
 		)
 		(pin "PT_MISO" output
 			(at 102.87 139.7 0)
+			(uuid "6058373c-049e-41f4-98ac-206ca4daed34")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6058373c-049e-41f4-98ac-206ca4daed34")
 		)
 		(pin "DRV1_ADC" input
 			(at 55.88 140.97 180)
+			(uuid "59f99dc6-02cd-4d9c-bd8c-af84a8101f3e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "59f99dc6-02cd-4d9c-bd8c-af84a8101f3e")
 		)
 		(pin "DRV4_ADC" input
 			(at 55.88 152.4 180)
+			(uuid "b1e57c9d-76c8-41af-a89d-d36d4ddbba92")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b1e57c9d-76c8-41af-a89d-d36d4ddbba92")
 		)
 		(pin "DRV2_ADC" input
 			(at 55.88 144.78 180)
+			(uuid "183611c7-ee93-4286-b547-a8c9aa178c61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "183611c7-ee93-4286-b547-a8c9aa178c61")
 		)
 		(pin "DRV3_ADC" input
 			(at 55.88 148.59 180)
+			(uuid "0b7be729-f626-418f-b58e-fced99cd563b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0b7be729-f626-418f-b58e-fced99cd563b")
 		)
 		(instances
 			(project "karca_v2"
@@ -1590,6 +1603,10 @@
 	(sheet
 		(at 55.88 101.6)
 		(size 41.91 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1619,63 +1636,63 @@
 		)
 		(pin "CS" input
 			(at 97.79 116.84 0)
+			(uuid "73420670-2fe9-4371-b061-bcda597e6bb0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "73420670-2fe9-4371-b061-bcda597e6bb0")
 		)
 		(pin "BAT_MISO" output
 			(at 97.79 109.22 0)
+			(uuid "d7177b2b-8c59-4af0-b39e-5b6268b8682e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d7177b2b-8c59-4af0-b39e-5b6268b8682e")
 		)
 		(pin "BAT_CLK" input
 			(at 97.79 111.76 0)
+			(uuid "7e396068-ddbd-48b0-af5f-00eca591882e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7e396068-ddbd-48b0-af5f-00eca591882e")
 		)
 		(pin "BAT_MOSI" input
 			(at 97.79 106.68 0)
+			(uuid "8e5b0ed6-3f02-40f2-825b-dc1f23d0796c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8e5b0ed6-3f02-40f2-825b-dc1f23d0796c")
 		)
 		(pin "DRV5_TVS" input
 			(at 97.79 119.38 0)
+			(uuid "92dce91b-5625-464e-9668-42fa62c7251c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "92dce91b-5625-464e-9668-42fa62c7251c")
 		)
 		(pin "DRV5_ADC" input
 			(at 97.79 121.92 0)
+			(uuid "ef720dee-55b6-4abe-bedf-b9c6442895dc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ef720dee-55b6-4abe-bedf-b9c6442895dc")
 		)
 		(instances
 			(project "karca_v2"
@@ -1688,6 +1705,10 @@
 	(sheet
 		(at 58.42 55.88)
 		(size 39.37 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1717,83 +1738,83 @@
 		)
 		(pin "LC_CLK" input
 			(at 97.79 68.58 0)
+			(uuid "41fb9c06-ef5b-47be-9406-6dfd6d562029")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "41fb9c06-ef5b-47be-9406-6dfd6d562029")
 		)
 		(pin "LC_MISO" output
 			(at 97.79 66.04 0)
+			(uuid "fc7c93bd-4570-4631-ad97-e142f70324e3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fc7c93bd-4570-4631-ad97-e142f70324e3")
 		)
 		(pin "LC_MOSI" input
 			(at 97.79 63.5 0)
+			(uuid "744385a5-1b03-4c8c-974a-47a3d574f6c9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "744385a5-1b03-4c8c-974a-47a3d574f6c9")
 		)
 		(pin "LC_CS" input
 			(at 97.79 73.66 0)
+			(uuid "6849faa4-06f6-4e77-ab34-f1aeb3a3772c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6849faa4-06f6-4e77-ab34-f1aeb3a3772c")
 		)
 		(pin "TC_1_ADC" input
 			(at 58.42 73.025 180)
+			(uuid "25d0475c-4370-4fe5-b451-40e0056fe4bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "25d0475c-4370-4fe5-b451-40e0056fe4bc")
 		)
 		(pin "TC_3_ADC" input
 			(at 58.42 67.945 180)
+			(uuid "3f34e694-a4d5-4157-bcaa-14fe56bdca0e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3f34e694-a4d5-4157-bcaa-14fe56bdca0e")
 		)
 		(pin "TC_4_ADC" input
 			(at 58.42 64.77 180)
+			(uuid "bb788690-2988-461e-b639-21ba7c019f3d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bb788690-2988-461e-b639-21ba7c019f3d")
 		)
 		(pin "TC_2_ADC" input
 			(at 58.42 70.485 180)
+			(uuid "5cc3b0fa-7156-4db8-8a16-b6752ac5ee63")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5cc3b0fa-7156-4db8-8a16-b6752ac5ee63")
 		)
 		(instances
 			(project "karca_v2"
@@ -1806,6 +1827,10 @@
 	(sheet
 		(at 160.02 96.52)
 		(size 46.99 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1815,7 +1840,7 @@
 			(color 255 255 194 1.0000)
 		)
 		(uuid "f3394041-f9fe-4d59-9036-d9e9f3f04b16")
-		(property "Sheetname" "Raspberry Pi"
+		(property "Sheetname" "MCU"
 			(at 160.02 95.8084 0)
 			(effects
 				(font
@@ -1836,113 +1861,113 @@
 		)
 		(pin "ADC1_CS" output
 			(at 160.02 99.06 180)
+			(uuid "5685dc69-9d04-4df3-bfce-e702c024685e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5685dc69-9d04-4df3-bfce-e702c024685e")
 		)
 		(pin "ADC2_CS" output
 			(at 160.02 116.84 180)
+			(uuid "c6cf527b-e700-479a-a82f-6712652b6485")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c6cf527b-e700-479a-a82f-6712652b6485")
 		)
 		(pin "DRV_CTL_4" output
 			(at 207.01 114.3 0)
+			(uuid "5ceb519a-763e-491e-b24c-021de7d0ed5f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5ceb519a-763e-491e-b24c-021de7d0ed5f")
 		)
 		(pin "DRV_CTL_5" output
 			(at 207.01 116.84 0)
+			(uuid "f732404a-d17d-46eb-a8ab-3e0f226592b9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f732404a-d17d-46eb-a8ab-3e0f226592b9")
 		)
 		(pin "DRV_CTL_2" output
 			(at 207.01 109.22 0)
+			(uuid "d449dc4b-2a1b-4c68-90b3-919f4a3bb782")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d449dc4b-2a1b-4c68-90b3-919f4a3bb782")
 		)
 		(pin "CRV_CTL_1" output
 			(at 207.01 106.68 0)
+			(uuid "ff709238-72d4-4535-9e09-d89908a1ab8b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ff709238-72d4-4535-9e09-d89908a1ab8b")
 		)
 		(pin "DRV_CTL_3" output
 			(at 207.01 111.76 0)
+			(uuid "fbd01333-c5d7-424b-b252-e59929a09881")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fbd01333-c5d7-424b-b252-e59929a09881")
 		)
 		(pin "IGN_CTL" output
 			(at 207.01 119.38 0)
+			(uuid "9fc05cab-6bc8-467e-a6a3-fe2da99527ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9fc05cab-6bc8-467e-a6a3-fe2da99527ec")
 		)
 		(pin "ADC3_CS" output
 			(at 160.02 121.92 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
 			(uuid "c9e071fa-fd2c-4d2b-afd5-1ddd4c6d9b12")
-		)
-		(pin "SPI{MOSI,MISO,CLK}" bidirectional
-			(at 160.02 109.22 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+		)
+		(pin "SPI{CLK,MISO,MOSI}" bidirectional
+			(at 160.02 109.22 180)
 			(uuid "8015f9ee-3573-4f3f-b38d-edb15222a359")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(pin "IGN_CONT" input
 			(at 207.01 122.555 0)
+			(uuid "46a4e2a0-b9b1-4a52-8405-927e5c49e329")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "46a4e2a0-b9b1-4a52-8405-927e5c49e329")
 		)
 		(instances
 			(project "karca_v2"
@@ -1957,4 +1982,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
