@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
-		(rev "1.1")
+		(date "2026-03-23")
+		(rev "1.2")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
 		(comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")

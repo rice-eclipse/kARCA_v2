@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
-		(rev "1.1")
+		(date "2026-03-23")
+		(rev "1.2")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
 		(comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
@@ -1630,23 +1630,25 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer"
-			(pin_names
-				(offset 1.016)
+		(symbol "Device:R_US"
+			(pin_numbers
 				(hide yes)
+			)
+			(pin_names
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
+			(property "Reference" "R"
+				(at 2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
+			(property "Value" "R_US"
 				(at -2.54 0 90)
 				(effects
 					(font
@@ -1655,7 +1657,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 1.016 -0.254 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1672,7 +1674,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1681,7 +1683,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "resistor variable"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1690,7 +1692,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Potentiometer*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1699,33 +1701,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Potentiometer_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
+						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1735,12 +1714,60 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "1"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1758,25 +1785,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3068,6 +3077,12 @@
 		(uuid "45c52ee1-a81b-4276-ac35-32e8a0aa4ecc")
 	)
 	(junction
+		(at 104.14 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f5b8f40-cfd8-4894-aee0-85ceaf1c8870")
+	)
+	(junction
 		(at 213.995 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3259,7 +3274,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.965 81.28) (xy 98.425 81.28)
+			(xy 104.14 87.63) (xy 101.6 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4049,6 +4064,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 96.52) (xy 104.14 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3de4a2d-d766-46b2-9e0c-332fa10d2c5f")
+	)
+	(wire
+		(pts
 			(xy 133.985 104.14) (xy 127.635 104.14)
 		)
 		(stroke
@@ -4109,6 +4134,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 87.63) (xy 104.14 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6756f3-5014-46a2-b619-016cd1b13481")
+	)
+	(wire
+		(pts
 			(xy 213.995 104.14) (xy 216.281 104.14)
 		)
 		(stroke
@@ -4136,6 +4171,16 @@
 			(type default)
 		)
 		(uuid "d608820c-6320-432c-af63-77518438f29d")
+	)
+	(wire
+		(pts
+			(xy 104.14 86.36) (xy 104.14 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d69182b4-9cf0-4477-a0c4-f1f588c7bbba")
 	)
 	(wire
 		(pts
@@ -4259,6 +4304,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 77.47) (xy 104.14 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbdf17ab-53b0-408b-919c-c5645bd304dc")
+	)
+	(wire
+		(pts
 			(xy 92.71 124.46) (xy 92.71 132.08)
 		)
 		(stroke
@@ -4308,7 +4363,7 @@
 		(uuid "452c3031-497d-4f0b-89ce-6fec886b2a79")
 	)
 	(label "IN_AMP_VREF"
-		(at 98.425 81.28 180)
+		(at 101.6 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4746,35 +4801,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 104.775 81.28 180)
+		(lib_id "Device:R_US")
+		(at 104.14 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "40e7acd0-8a3b-49c8-8451-903ab6673dff")
-		(property "Reference" "RV1"
-			(at 107.315 80.01 0)
+		(dnp no)
+		(uuid "2ab5779a-47fd-4c50-b746-070d98e0d3e9")
+		(property "Reference" "R5"
+			(at 109.22 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "30k"
-			(at 107.315 82.55 0)
+		(property "Value" "40k"
+			(at 106.68 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
-			(at 104.775 81.28 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 105.156 92.964 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.775 81.28 0)
+			(at 104.14 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +4844,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.775 81.28 0)
+			(at 104.14 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,19 +4852,83 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "f0a79807-499b-4242-b531-65d668a7c81e")
-		)
 		(pin "1"
-			(uuid "195f9e22-e327-414a-bfe9-d4f0d5a4f216")
+			(uuid "39d7c79a-3745-40f3-aa96-2ae134fee7d0")
 		)
 		(pin "2"
-			(uuid "54dfd31e-efee-4147-bed4-d28802a2fa79")
+			(uuid "2443daa2-04e4-4fbc-b7e4-a5df19e76b45")
 		)
 		(instances
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a"
-					(reference "RV1")
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 104.14 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42ddb7fc-c955-4f29-a3eb-9d4601c89ead")
+		(property "Reference" "R2"
+			(at 109.22 83.185 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 106.68 83.185 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 105.156 82.804 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8d4251f-41c7-44b5-bb08-e82f7be73e22")
+		)
+		(pin "2"
+			(uuid "39ba16de-cfaa-4b22-9ea8-75c0905ba26f")
+		)
+		(instances
+			(project "karca_v2"
+				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5470,16 +5586,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 104.775 77.47 0)
+		(at 104.14 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "916e6b9b-f7c9-401c-90a1-45b7c71be315")
 		(property "Reference" "#PWR021"
-			(at 104.775 81.28 0)
+			(at 104.14 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5488,7 +5603,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 104.775 72.39 0)
+			(at 106.807 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5496,7 +5611,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.775 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +5620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.775 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +5629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.775 77.47 0)
+			(at 104.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6719,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.775 85.09 0)
+		(at 104.14 97.79 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6614,7 +6729,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1b20cf0-6517-4b0d-86f9-e3ef5f59faac")
 		(property "Reference" "#PWR023"
-			(at 104.775 91.44 0)
+			(at 104.14 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6623,7 +6738,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.775 89.535 0)
+			(at 104.14 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6631,7 +6746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.775 85.09 0)
+			(at 104.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6640,7 +6755,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.775 85.09 0)
+			(at 104.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6649,7 +6764,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.775 85.09 0)
+			(at 104.14 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)

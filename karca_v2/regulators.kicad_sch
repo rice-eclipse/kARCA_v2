@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
-		(rev "1.1")
+		(date "2026-03-23")
+		(rev "1.2")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
 		(comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
@@ -3332,6 +3332,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 134.62) (xy 49.53 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "093f5eec-3570-4168-8086-89e4aeda3a9f")
+	)
+	(wire
+		(pts
 			(xy 287.02 143.51) (xy 287.02 151.638)
 		)
 		(stroke
@@ -3449,6 +3459,16 @@
 			(type default)
 		)
 		(uuid "3a1cc587-3fc8-4baa-b3bb-0562acb35a20")
+	)
+	(wire
+		(pts
+			(xy 46.99 129.54) (xy 49.53 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b2dfcc1-d57d-4ecd-91ec-6499658e673c")
 	)
 	(wire
 		(pts
@@ -3642,6 +3662,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 139.7) (xy 49.53 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d70ddf0-4ebb-4160-9881-a1cae1ede945")
+	)
+	(wire
+		(pts
+			(xy 46.99 137.16) (xy 49.53 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fd401cc-99ff-4334-8a94-5fda0e11c329")
+	)
+	(wire
+		(pts
 			(xy 275.59 134.62) (xy 278.511 134.62)
 		)
 		(stroke
@@ -3709,6 +3749,16 @@
 			(type default)
 		)
 		(uuid "a4e4d6de-6d4b-4227-8b96-3fff9cb5fbe8")
+	)
+	(wire
+		(pts
+			(xy 46.99 132.08) (xy 49.53 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac8b17dd-3b45-4326-880b-1755842959ca")
 	)
 	(wire
 		(pts
@@ -3802,7 +3852,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.165 124.46) (xy 52.07 124.46)
+			(xy 45.72 124.46) (xy 49.53 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4000,9 +4050,31 @@
 		)
 		(uuid "fb5a640d-1192-4b24-b082-9698b8bec8b2")
 	)
+	(hierarchical_label "DRV3_ADC"
+		(shape input)
+		(at 46.99 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1f414cbd-cd26-4849-901a-2c4911f49dfb")
+	)
+	(hierarchical_label "DRV4_ADC"
+		(shape input)
+		(at 46.99 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "47972e4f-605c-414e-996c-9feb48d487af")
+	)
 	(hierarchical_label "DRV5_ADC"
 		(shape input)
-		(at 52.07 129.54 180)
+		(at 46.99 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4024,7 +4096,7 @@
 	)
 	(hierarchical_label "DRV5_TVS"
 		(shape input)
-		(at 50.165 124.46 180)
+		(at 45.72 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4032,6 +4104,28 @@
 			(justify right)
 		)
 		(uuid "6c43e947-c18d-4e79-a399-0601a5e94b8a")
+	)
+	(hierarchical_label "DRV1_ADC"
+		(shape input)
+		(at 46.99 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70985ae6-9ab0-4adf-af8c-03fbc2d6aa01")
+	)
+	(hierarchical_label "DRV2_ADC"
+		(shape input)
+		(at 46.99 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d6060408-c683-4f1d-81fd-8314080c546a")
 	)
 	(hierarchical_label "BAT_MISO"
 		(shape output)
@@ -6972,8 +7066,8 @@
 		)
 	)
 	(sheet
-		(at 52.07 113.665)
-		(size 40.64 20.32)
+		(at 49.53 113.665)
+		(size 43.18 29.845)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6988,7 +7082,7 @@
 		)
 		(uuid "3c219595-0067-45a9-924a-be9e4c3281ae")
 		(property "Sheetname" "battery_monitoring"
-			(at 52.07 112.9534 0)
+			(at 49.53 112.9534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6997,7 +7091,7 @@
 			)
 		)
 		(property "Sheetfile" "battery_monitoring.kicad_sch"
-			(at 52.07 134.5696 0)
+			(at 49.53 144.0946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7066,7 +7160,7 @@
 			)
 		)
 		(pin "DRV5_TVS" input
-			(at 52.07 124.46 180)
+			(at 49.53 124.46 180)
 			(uuid "1da8c27e-284a-4ac6-9d69-86b0508734df")
 			(effects
 				(font
@@ -7076,8 +7170,48 @@
 			)
 		)
 		(pin "DRV5_ADC" input
-			(at 52.07 129.54 180)
+			(at 49.53 129.54 180)
 			(uuid "049d578b-33e6-4198-a95e-1acb3392cdd7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV4_ADC" input
+			(at 49.53 132.08 180)
+			(uuid "0950ea75-b4f9-4942-a87f-1422893962ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV3_ADC" input
+			(at 49.53 134.62 180)
+			(uuid "7daaec7f-a277-40cb-8e9d-597d061cc0a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV1_ADC" input
+			(at 49.53 139.7 180)
+			(uuid "3da8247f-3bd3-4021-8423-d1cf39a3c860")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV2_ADC" input
+			(at 49.53 137.16 180)
+			(uuid "6a29b51d-6792-4fe0-bc4a-3c03b92dfdf8")
 			(effects
 				(font
 					(size 1.27 1.27)
