@@ -1,9 +1,6 @@
-- Motors and props
-- Motor Servo rotation torque
-- Configuring ardupilot and stuff
-- PCB for power supplies
-- Connecting computer vision with ardupilot
-- Simulations 
+config.ini
 
-
-168.5.175.91
+pt4: ox_tank
+pt3:injector
+pt 2: feedline
+pt 1: cc
