@@ -3062,6 +3062,12 @@
 		(uuid "33210ceb-91e0-4731-87b8-3c557a3093ec")
 	)
 	(junction
+		(at 209.55 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4127ec2d-7975-46ba-bac2-39354f5f0bed")
+	)
+	(junction
 		(at 210.82 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3399,16 +3405,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 78.74) (xy 209.55 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "556bf70b-9003-4769-9a2e-3cf447702528")
-	)
-	(wire
-		(pts
 			(xy 64.77 94.615) (xy 64.77 99.695)
 		)
 		(stroke
@@ -3499,6 +3495,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 86.36) (xy 205.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb097d0-e21c-49d5-b7b2-d6f52e33c4c1")
+	)
+	(wire
+		(pts
 			(xy 196.85 104.14) (xy 185.42 104.14)
 		)
 		(stroke
@@ -3526,6 +3532,16 @@
 			(type default)
 		)
 		(uuid "8332c154-5934-49f9-a61f-8b1ce90ccdf6")
+	)
+	(wire
+		(pts
+			(xy 209.55 80.01) (xy 209.55 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8909d610-be83-4b1a-83e9-0579c5a2edf8")
 	)
 	(wire
 		(pts
@@ -3609,6 +3625,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 88.9) (xy 195.58 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afb15e97-dd06-46fd-a9e9-0b4b3c46c588")
+	)
+	(wire
+		(pts
 			(xy 238.76 31.115) (xy 248.92 31.115)
 		)
 		(stroke
@@ -3666,6 +3692,16 @@
 			(type default)
 		)
 		(uuid "bbb75d89-d9a7-401f-9186-80ecc8f9078f")
+	)
+	(wire
+		(pts
+			(xy 195.58 86.36) (xy 198.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe07d96-4607-4900-9cdf-68ecdac92721")
 	)
 	(wire
 		(pts
@@ -3789,6 +3825,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 86.36) (xy 209.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d20fa2cc-7b6b-4203-a543-15b1cc2bc5fc")
+	)
+	(wire
+		(pts
 			(xy 172.72 101.6) (xy 172.72 127)
 		)
 		(stroke
@@ -3829,13 +3875,13 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 78.74) (xy 212.09 78.74)
+			(xy 204.47 80.01) (xy 209.55 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e987792a-d4a1-4936-b3b6-db60f80eb368")
+		(uuid "eac0264f-550f-4f1e-b657-b023dd80dc2d")
 	)
 	(wire
 		(pts
@@ -3946,6 +3992,28 @@
 			(type default)
 		)
 		(uuid "fcc9f322-3595-40c4-b3fb-b355b829e8e4")
+	)
+	(global_label "ADC_VREF"
+		(shape input)
+		(at 204.47 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "25957b77-ae90-4d88-b8e5-b0d0d437ebaa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 192.2924 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "PT_CLK"
 		(shape input)
@@ -4577,6 +4645,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 201.93 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5486a31d-645b-4df8-94ee-fa1d48d517f3")
+		(property "Reference" "C10"
+			(at 202.438 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 202.438 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 205.74 85.3948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a147e31e-ea17-4050-b537-71209dd33abd")
+		)
+		(pin "1"
+			(uuid "493cb387-8f4a-4703-9ea4-0476d24ab251")
+		)
+		(instances
+			(project "karca_v2"
+				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x10")
 		(at 44.45 94.615 0)
 		(mirror y)
@@ -5099,7 +5234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 234.95 111.76 0)
 			(effects
 				(font
@@ -5740,6 +5875,72 @@
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2c4a27e-1f17-477e-b84d-493a5b1b1119")
+		(property "Reference" "#PWR043"
+			(at 195.58 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca185b35-9439-4182-b3b4-0455e5b1dcfc")
+		)
+		(instances
+			(project "karca_v2"
+				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)

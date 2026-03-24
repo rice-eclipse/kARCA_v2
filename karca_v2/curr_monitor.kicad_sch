@@ -2229,7 +2229,7 @@
 		)
 		(uuid "7e24115b-7195-49dd-93f1-8d380a2ce3b7")
 	)
-	(text "fc = 1.5kHz\n"
+	(text "fc = 150Hz\n"
 		(exclude_from_sim no)
 		(at 156.845 45.72 0)
 		(effects
@@ -4159,7 +4159,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 162.56 93.98 0)
 			(effects
 				(font
@@ -4294,7 +4294,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 162.56 139.7 0)
 			(effects
 				(font
@@ -4429,7 +4429,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 162.56 62.23 0)
 			(effects
 				(font
@@ -5839,7 +5839,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 162.56 116.84 0)
 			(effects
 				(font
