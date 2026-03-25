@@ -753,18 +753,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q10"
-				(at 6.35 1.27 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -772,8 +770,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRF3708"
-				(at 6.35 -1.27 0)
+			(property "Value" "AO3400A"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -781,25 +779,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "IRF3708:TO254P1041X444X1930-3"
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -808,34 +809,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -844,7 +818,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -988,7 +971,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1011,7 +994,7 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
+			(symbol "AO3400A_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1040,7 +1023,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1058,7 +1041,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1355,16 +1338,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 30.48) (xy 76.2 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b98aaff-a6e6-402c-8b2e-df17cec5b6d3")
-	)
-	(wire
-		(pts
 			(xy 90.17 30.48) (xy 106.68 30.48)
 		)
 		(stroke
@@ -1372,16 +1345,6 @@
 			(type default)
 		)
 		(uuid "2977eaa6-1ec9-40ca-842e-0610fcdcec4a")
-	)
-	(wire
-		(pts
-			(xy 66.04 38.1) (xy 66.04 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b8fd0f8-32ed-4879-b0f4-09778538ffd3")
 	)
 	(wire
 		(pts
@@ -1557,99 +1520,17 @@
 		(uuid "fd2b6d00-f373-4a3d-994b-6d58f41911b7")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 66.04 48.26 0)
+		(lib_id "Transistor_FET:AO3400A")
+		(at 73.66 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "02e9fb74-7fa2-46ea-af23-306a8615a275")
-		(property "Reference" "#PWR0136"
-			(at 66.04 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 66.04 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "542a829e-3416-4dff-b9ac-0abab06873f3")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-					(reference "#PWR0148")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-					(reference "#PWR0142")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-					(reference "#PWR0164")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-					(reference "#PWR0139")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-					(reference "#PWR0136")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 66.04 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0684e577-c858-4340-be7f-cc77062a9a63")
-		(property "Reference" "R87"
-			(at 68.58 43.18 0)
+		(uuid "100fb9ba-22f7-49c9-b3ec-cb9e2aac4b1d")
+		(property "Reference" "Q1"
+			(at 80.01 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,8 +1538,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 68.58 45.72 0)
+		(property "Value" "AO3400A"
+			(at 80.01 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1666,68 +1547,65 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 67.056 44.704 90)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 78.74 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 73.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C104594"
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e21ddfb8-a92b-42bb-b000-9ea6c7f8c116")
 		)
 		(pin "2"
-			(uuid "e803c652-ae5d-4f9d-be4e-b8063dc21f5a")
+			(uuid "738bd5c9-8a81-4584-8aa5-7e9543890e7e")
+		)
+		(pin "3"
+			(uuid "71a1e650-a702-42ea-a9d2-0bd19e7e7e88")
+		)
+		(pin "1"
+			(uuid "b4df49c0-6202-4975-b477-f84573a0aaa1")
 		)
 		(instances
-			(project "karca_v2"
+			(project ""
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-					(reference "R104")
+					(reference "Q11")
 					(unit 1)
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-					(reference "R95")
+					(reference "Q10")
 					(unit 1)
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-					(reference "R118")
+					(reference "Q12")
 					(unit 1)
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-					(reference "R91")
+					(reference "Q9")
 					(unit 1)
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-					(reference "R87")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -2263,122 +2141,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 73.66 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "5401427b-dc0c-48a8-8386-86cd460e869e")
-		(property "Reference" "Q4"
-			(at 80.01 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRF3708"
-			(at 80.01 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 78.74 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-			(at 73.66 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 73.66 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 73.66 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 73.66 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6c5284f0-e15d-4027-b104-e95657649b9a")
-		)
-		(pin "3"
-			(uuid "a0de56d9-4024-40e4-b86b-e517298e27ad")
-		)
-		(pin "1"
-			(uuid "83b3c1a1-c102-4318-ba86-80420a86fdba")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-					(reference "Q7")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-					(reference "Q6")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-					(reference "Q8")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-					(reference "Q5")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 52.07 71.12 0)
 		(unit 1)
@@ -2563,101 +2325,6 @@
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
 					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 66.04 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c91d217e-f109-4286-b668-b5228dcd8ca4")
-		(property "Reference" "D9"
-			(at 69.85 34.6075 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 69.85 37.1475 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C125084"
-			(at 66.04 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e37d561e-a828-439d-af56-696602b5ef0d")
-		)
-		(pin "2"
-			(uuid "c07f0f22-42e8-42aa-bbf3-56f583ece509")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/05cadafe-7a2d-469e-aaad-c97b2b0fe0a7"
-					(reference "D18")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/2860586f-715f-4870-80c8-f3cf863ca8a9"
-					(reference "D15")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/3bb2e414-3eea-4b61-8a99-8ad40fce6877"
-					(reference "D21")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/4f718e47-47b9-4244-ba69-1ef2b76e0670"
-					(reference "D12")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/7dac9c60-d103-4efb-8cad-8e42b4335148/7a6ee143-9220-4380-9bc1-f5b3e174d3aa"
-					(reference "D9")
 					(unit 1)
 				)
 			)
