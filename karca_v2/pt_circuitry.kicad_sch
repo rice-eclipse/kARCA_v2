@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2026-03-23")
-		(rev "1.2")
+		(date "2024-12-16")
+		(rev "1.1")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
 		(comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
@@ -988,7 +988,7 @@
 		)
 		(uuid "eae85019-7fda-44dc-b4e1-8d8c2bd66af5")
 	)
-	(text "fc = 193Hz\n"
+	(text "fc = 1.5kHz\n"
 		(exclude_from_sim no)
 		(at 199.136 54.991 0)
 		(effects
@@ -1627,7 +1627,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "0.1u"
 			(at 191.516 53.086 90)
 			(effects
 				(font
@@ -2418,7 +2418,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680n"
+		(property "Value" "0.1u"
 			(at 171.831 81.026 0)
 			(effects
 				(font

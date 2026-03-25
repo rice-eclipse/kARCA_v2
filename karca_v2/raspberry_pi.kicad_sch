@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2026-03-23")
-		(rev "1.2")
+		(date "2024-12-16")
+		(rev "1.1")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
 		(comment 2 "Engine Control System for the Static Engine Testing of Rice Eclipse's Hybrid Rocket Motors")
@@ -1474,6 +1474,18 @@
 		(color 0 0 0 0)
 		(uuid "df111e92-6e77-4cde-80aa-1f360153c86f")
 	)
+	(no_connect
+		(at 121.92 83.82)
+		(uuid "2278099b-71dd-4206-95d7-a872310cc346")
+	)
+	(no_connect
+		(at 121.92 81.28)
+		(uuid "3a164696-6e97-4999-bc63-60869a2722ad")
+	)
+	(no_connect
+		(at 121.92 78.74)
+		(uuid "fca17701-0c04-4912-952f-0fe626623b9d")
+	)
 	(bus_entry
 		(at 93.98 66.04)
 		(size 2.54 2.54)
@@ -1503,16 +1515,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 88.9) (xy 121.92 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04fb00c4-e3fb-43a5-8a73-42bb54d9b1de")
-	)
-	(wire
-		(pts
 			(xy 160.02 67.31) (xy 160.02 71.12)
 		)
 		(stroke
@@ -1520,6 +1522,16 @@
 			(type default)
 		)
 		(uuid "135ab6d4-d2a2-46da-8407-3bcbf6819e19")
+	)
+	(wire
+		(pts
+			(xy 104.14 88.9) (xy 104.14 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e8f89b8-7bed-439e-99dc-91f90a8942ae")
 	)
 	(wire
 		(pts
@@ -1560,26 +1572,6 @@
 			(type default)
 		)
 		(uuid "2ef9c5ed-7d5b-4dac-9e36-00014f745b84")
-	)
-	(wire
-		(pts
-			(xy 134.62 86.36) (xy 121.92 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f967b41-1301-4e67-b962-8f071e4dd2cc")
-	)
-	(wire
-		(pts
-			(xy 134.62 83.82) (xy 121.92 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33d3c313-ac77-4446-9e0f-a5b3f2bcf885")
 	)
 	(wire
 		(pts
@@ -1630,6 +1622,16 @@
 			(type default)
 		)
 		(uuid "49597c15-ea2b-4d3c-a97b-b1a9e143c15f")
+	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 124.46 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "520ae37a-27a8-42c4-8913-8fa2534c3bff")
 	)
 	(wire
 		(pts
@@ -1733,13 +1735,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 88.9) (xy 109.22 88.9)
+			(xy 121.92 88.9) (xy 124.46 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e213563a-b97b-49cf-bc1e-12aaaaf6d8a3")
+		(uuid "dc5c17ee-4fbd-4047-987b-29517bcb021b")
 	)
 	(wire
 		(pts
@@ -1763,13 +1765,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 88.9) (xy 105.41 96.52)
+			(xy 109.22 88.9) (xy 104.14 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1ee13a9-e878-44d9-afaf-c7f8e128b698")
+		(uuid "fb7ae9bd-e625-4c68-91ef-f26b35cb2ab5")
 	)
 	(label "SPI.MOSI"
 		(at 101.6 73.66 0)
@@ -1821,17 +1823,6 @@
 		)
 		(uuid "ecc1eac7-a220-4242-86a0-2df282e8bd2f")
 	)
-	(hierarchical_label "SPI2_MOSI"
-		(shape output)
-		(at 134.62 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "06ad63d0-3964-471f-a97b-4c1ac668a183")
-	)
 	(hierarchical_label "ADC1_CS"
 		(shape output)
 		(at 109.22 76.2 180)
@@ -1842,28 +1833,6 @@
 			(justify right)
 		)
 		(uuid "33b493fb-6d04-4724-adba-5bd187bdaa02")
-	)
-	(hierarchical_label "SPI2_CLK"
-		(shape output)
-		(at 134.62 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5a2c1a00-a2de-4dfb-877f-f8dbf416c2e0")
-	)
-	(hierarchical_label "SPI2_MISO"
-		(shape input)
-		(at 134.62 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6016505e-4d48-42ef-ad67-63e434f26d8e")
 	)
 	(hierarchical_label "CRV_CTL_1"
 		(shape output)
@@ -1887,17 +1856,6 @@
 		)
 		(uuid "7b3ea809-ef02-429b-8919-b839e845ab63")
 	)
-	(hierarchical_label "IGN_CTL"
-		(shape output)
-		(at 121.92 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7e17185a-c123-436c-957e-1c61c41b2677")
-	)
 	(hierarchical_label "DRV_CTL_4"
 		(shape output)
 		(at 109.22 83.82 180)
@@ -1908,6 +1866,17 @@
 			(justify right)
 		)
 		(uuid "8c346f23-c53a-43f8-8471-02a0bdb08870")
+	)
+	(hierarchical_label "IGN_CTL"
+		(shape output)
+		(at 124.46 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "90c939fd-9792-45a3-97e8-db4ed5cb4220")
 	)
 	(hierarchical_label "SPI{CLK,MISO,MOSI}"
 		(shape bidirectional)
@@ -1944,7 +1913,7 @@
 	)
 	(hierarchical_label "IGN_CONT"
 		(shape input)
-		(at 121.92 78.74 0)
+		(at 124.46 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1974,194 +1943,6 @@
 			(justify right)
 		)
 		(uuid "dc4ab7df-3870-4d4d-8f09-d6aa7e133603")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 105.41 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18ef932e-c77c-4138-b7f9-b3d5e0706c76")
-		(property "Reference" "#PWR0180"
-			(at 105.41 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.41 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "096b5184-abe0-448f-91a1-afcfc5590fea")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/f3394041-f9fe-4d59-9036-d9e9f3f04b16"
-					(reference "#PWR0180")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
-		(at 114.3 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24cd7f8b-72ee-420b-9ead-32162f531fe5")
-		(property "Reference" "J7"
-			(at 115.57 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x10_Odd_Even"
-			(at 115.57 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 114.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "94b6931b-f31c-45d2-9506-518fe6db297c")
-		)
-		(pin "11"
-			(uuid "0674d1f7-31a7-48de-902c-e31cfd2cd700")
-		)
-		(pin "15"
-			(uuid "803d2b53-53e9-4c36-be9a-5763bc985fcb")
-		)
-		(pin "12"
-			(uuid "f74e9b08-92c1-4633-9cc4-f45e266815f4")
-		)
-		(pin "6"
-			(uuid "83a50dd9-1d1e-4376-a1e8-a67c67711a0a")
-		)
-		(pin "1"
-			(uuid "0533a754-68cb-4497-abcd-5c7f8c89479c")
-		)
-		(pin "5"
-			(uuid "d4f21342-66b4-4f1b-bcbb-6e8f2aed261a")
-		)
-		(pin "7"
-			(uuid "f28908a5-1448-4576-a772-ab2b52f5f1c7")
-		)
-		(pin "3"
-			(uuid "7c471d80-a707-4184-a5fe-4477a22e93cc")
-		)
-		(pin "13"
-			(uuid "95638487-6309-47c7-ab43-69c7530c0086")
-		)
-		(pin "17"
-			(uuid "4108b8c8-3fa7-4098-ad5c-a8afa34056e9")
-		)
-		(pin "19"
-			(uuid "3ccd68b6-5be6-40c3-91ca-d74d67f4f792")
-		)
-		(pin "2"
-			(uuid "5cced7da-31a9-4222-bfd2-994893b25ff4")
-		)
-		(pin "4"
-			(uuid "3eee1b78-f91b-4303-bef2-e47df9bb1dbd")
-		)
-		(pin "8"
-			(uuid "e2760230-2d14-4ef4-b9ba-84779efa1618")
-		)
-		(pin "10"
-			(uuid "b594597b-ffd0-43ba-ad32-275ea743a501")
-		)
-		(pin "16"
-			(uuid "eb8b934f-7485-43f4-a53a-b6d0417c6e72")
-		)
-		(pin "14"
-			(uuid "01ad22ca-b728-4541-b6e5-b05f4f21b6d6")
-		)
-		(pin "18"
-			(uuid "07ec837f-99bd-48b6-8960-821788464a02")
-		)
-		(pin "20"
-			(uuid "b510e681-6fbe-4375-8026-e6c7bbed06cb")
-		)
-		(instances
-			(project ""
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/f3394041-f9fe-4d59-9036-d9e9f3f04b16"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -2510,6 +2291,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 104.14 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7097ef00-aaff-44b9-a534-2e30063d7959")
+		(property "Reference" "#PWR0181"
+			(at 104.14 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46f5c9a0-a33d-4ead-bc77-fb2da78bce33")
+		)
+		(instances
+			(project "karca_v2"
+				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/f3394041-f9fe-4d59-9036-d9e9f3f04b16"
+					(reference "#PWR0181")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:PN2222A")
 		(at 177.8 67.31 0)
 		(unit 1)
@@ -2645,6 +2492,128 @@
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/f3394041-f9fe-4d59-9036-d9e9f3f04b16"
 					(reference "#PWR0182")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
+		(at 114.3 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7e20fc4-97c0-43cc-bdd2-71b05c5c1c9a")
+		(property "Reference" "J12"
+			(at 115.57 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x10_Odd_Even"
+			(at 115.57 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "949f86e3-206f-408d-a52c-d5c2ebb4824f")
+		)
+		(pin "10"
+			(uuid "79d211ce-4f3b-4a21-b326-a3953874a8a3")
+		)
+		(pin "19"
+			(uuid "76992ff9-ce53-4a44-be08-99f8df62b344")
+		)
+		(pin "7"
+			(uuid "18d622c1-4f26-4e93-9e45-fa8a7a012bdf")
+		)
+		(pin "9"
+			(uuid "931e7bd5-8e92-492a-a62e-6b8d58768ca4")
+		)
+		(pin "13"
+			(uuid "ffef0cdd-8419-468e-b730-e95a56a10ba2")
+		)
+		(pin "3"
+			(uuid "65938f85-bb32-43b9-bd3e-124175259913")
+		)
+		(pin "5"
+			(uuid "a4f166d3-913a-410f-9564-50ef6b45528c")
+		)
+		(pin "17"
+			(uuid "cd15d97c-19bb-4d6a-bf77-5338c9e221c1")
+		)
+		(pin "2"
+			(uuid "f44e37f9-ac83-4401-a8b7-ed1ca81d5858")
+		)
+		(pin "4"
+			(uuid "3b3acd1b-d5e9-48d1-82e4-69b0cec030f2")
+		)
+		(pin "11"
+			(uuid "aa009757-c547-4ba2-bab1-89f5a6556194")
+		)
+		(pin "15"
+			(uuid "9a32d6e9-e4c2-498c-8416-74e2c169bc8a")
+		)
+		(pin "6"
+			(uuid "e1d7939d-9f39-4823-bccf-8cef63a7c2e7")
+		)
+		(pin "8"
+			(uuid "e37bea19-5baa-4ec7-b3dd-92bdc9299996")
+		)
+		(pin "14"
+			(uuid "25cd3547-c3f3-439c-8b81-2e3ece544d13")
+		)
+		(pin "18"
+			(uuid "00ff4e4e-c6c4-4faf-b8e6-25cb458bbfaf")
+		)
+		(pin "16"
+			(uuid "c8119b40-b781-4952-92ae-c2e2500892cb")
+		)
+		(pin "20"
+			(uuid "3ff37e0c-8c4a-4d07-bb81-b0e6e43205cc")
+		)
+		(pin "12"
+			(uuid "d4b06008-7cc0-45c4-8477-a78f3b84c057")
+		)
+		(instances
+			(project ""
+				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/f3394041-f9fe-4d59-9036-d9e9f3f04b16"
+					(reference "J12")
 					(unit 1)
 				)
 			)
