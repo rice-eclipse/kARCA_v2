@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
+		(date "2026-03-25")
 		(rev "1.1")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
@@ -5157,7 +5157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9356bceb-63d2-48dd-8a31-7408f8f3b165")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR0139"
 			(at 189.23 93.98 0)
 			(effects
 				(font
@@ -5207,7 +5207,7 @@
 		(instances
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e"
-					(reference "#PWR052")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -5927,7 +5927,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3379eb6-5989-4093-b301-bfb0f5ec82b3")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR0142"
 			(at 69.85 44.45 0)
 			(effects
 				(font
@@ -5977,7 +5977,7 @@
 		(instances
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/c566ee8f-cb19-4e44-a9af-dd67a0aa158e"
-					(reference "#PWR053")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)

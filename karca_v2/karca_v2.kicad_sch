@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
+		(date "2026-03-25")
 		(rev "1.1")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
@@ -2204,10 +2204,6 @@
 		(instances
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c"
-					(reference "D4")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a"
 					(reference "D4")
 					(unit 1)
 				)

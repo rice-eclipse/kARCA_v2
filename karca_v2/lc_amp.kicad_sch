@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "kARCA 2.0 Engine Control System")
-		(date "2024-12-16")
+		(date "2026-03-25")
 		(rev "1.1")
 		(company "Rice Eclipse")
 		(comment 1 "Designed by Deepak Narayan")
@@ -1470,7 +1470,7 @@
 		)
 		(uuid "55541349-1854-4da6-ba0e-3a3fd9590a60")
 	)
-	(text "fc = 1.5kHz\n"
+	(text "fc = 193Hz\n"
 		(exclude_from_sim no)
 		(at 175.768 47.752 0)
 		(effects
@@ -2455,7 +2455,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 191.135 50.165 90)
 			(effects
 				(font
@@ -3623,7 +3623,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "680n"
 			(at 183.515 88.9 0)
 			(effects
 				(font
