@@ -3452,16 +3452,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 133.985) (xy 96.52 133.985)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc56d5a8-cb2f-4851-8daf-f1c92b91e977")
-	)
-	(wire
-		(pts
 			(xy 141.605 139.446) (xy 144.653 139.446)
 		)
 		(stroke
@@ -3663,17 +3653,6 @@
 			(justify left)
 		)
 		(uuid "6c17ce04-4a63-43e0-9999-78383be663f5")
-	)
-	(hierarchical_label "DRV5_TVS"
-		(shape input)
-		(at 92.71 133.985 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6c43e947-c18d-4e79-a399-0601a5e94b8a")
 	)
 	(hierarchical_label "DRV1_ADC"
 		(shape input)
@@ -6241,16 +6220,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "DRV5_TVS" input
-			(at 96.52 133.985 180)
-			(uuid "1da8c27e-284a-4ac6-9d69-86b0508734df")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "DRV5_ADC" input

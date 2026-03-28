@@ -2456,16 +2456,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 41.275) (xy 124.46 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "601e6d7c-28ee-45fa-a8c7-cbaf62b98eef")
-	)
-	(wire
-		(pts
 			(xy 74.93 83.185) (xy 226.06 83.185)
 		)
 		(stroke
@@ -2713,16 +2703,6 @@
 			(type default)
 		)
 		(uuid "cdff2f91-77b9-4bad-a269-48be478a992a")
-	)
-	(wire
-		(pts
-			(xy 125.095 41.275) (xy 124.46 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce303fa3-9ff5-4de3-87c9-e0e63a8a7e9a")
 	)
 	(wire
 		(pts
@@ -3088,17 +3068,6 @@
 			(justify left)
 		)
 		(uuid "6b3a3dcf-891b-4d5b-8e64-8c3c9fd65ac3")
-	)
-	(hierarchical_label "DRV5_TVS"
-		(shape output)
-		(at 125.095 41.275 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7a6c8b8f-d15a-42da-bbe8-d0c84cf1f601")
 	)
 	(hierarchical_label "DRV1_CTL"
 		(shape input)
@@ -5016,16 +4985,6 @@
 		(pin "DRV4_NEG" input
 			(at 144.78 59.69 0)
 			(uuid "3e1afe06-eead-45bd-9642-f717b9318e39")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DRV5_TVS" output
-			(at 124.46 44.45 90)
-			(uuid "d88ec8e4-3cad-480a-b4a6-be979a49a859")
 			(effects
 				(font
 					(size 1.27 1.27)

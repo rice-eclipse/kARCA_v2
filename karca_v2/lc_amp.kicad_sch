@@ -1543,12 +1543,6 @@
 		(uuid "25edda47-5266-4394-b2ea-02a7a53c54e1")
 	)
 	(junction
-		(at 124.46 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70f44e29-e139-4b49-a592-b701a90693b5")
-	)
-	(junction
 		(at 180.34 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1904,7 +1898,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 74.93) (xy 153.67 74.93)
+			(xy 102.87 74.93) (xy 153.67 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1971,16 +1965,6 @@
 			(type default)
 		)
 		(uuid "9456ab73-93e8-47c6-9647-e4283d927de1")
-	)
-	(wire
-		(pts
-			(xy 124.46 74.93) (xy 102.87 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d03860d-065c-4362-963c-3544d68ec58b")
 	)
 	(wire
 		(pts
@@ -2747,85 +2731,6 @@
 				)
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a/bc96a098-6b50-45fa-b7f8-d933c0ccdce6"
 					(reference "#PWR089")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 124.46 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38a0c0d0-a9f2-44cd-9fc4-5c69e0215593")
-		(property "Reference" "TP20"
-			(at 126.365 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 126.365 72.898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 129.54 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4027c0fd-847b-47d3-9937-fdac0028ff36")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a/592ac910-f9a7-4404-90f3-e507c08d3633"
-					(reference "TP20")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a/67c0501e-595c-4b66-aaf5-f511fba00546"
-					(reference "TP25")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a/a97215da-164a-4e9e-8509-0b10a846e98d"
-					(reference "TP30")
-					(unit 1)
-				)
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/ddbef897-b93d-4056-8606-b8e89931524a/bc96a098-6b50-45fa-b7f8-d933c0ccdce6"
-					(reference "TP35")
 					(unit 1)
 				)
 			)

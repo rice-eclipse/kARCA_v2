@@ -2365,12 +2365,6 @@
 		)
 	)
 	(junction
-		(at 171.45 122.555)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f75b08f-f261-4371-afcf-dd0b5fd64ebc")
-	)
-	(junction
 		(at 104.775 107.315)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2393,12 +2387,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dee75a6-5998-4017-ac3c-bcfd9c58e8a4")
-	)
-	(junction
-		(at 176.53 161.925)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "567a96f9-6bcb-4a36-bb6d-23699a3dd029")
 	)
 	(junction
 		(at 192.532 160.782)
@@ -2425,12 +2413,6 @@
 		(uuid "90d125f1-dd10-447a-86a8-f71fb3dd8141")
 	)
 	(junction
-		(at 171.45 76.835)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a13598e4-ab19-41e5-a7f4-e866eaf9830a")
-	)
-	(junction
 		(at 192.405 121.412)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2455,12 +2437,6 @@
 		(uuid "d2e51b2d-6aee-42b6-8d4e-3b86c18a2ee3")
 	)
 	(junction
-		(at 176.53 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9a3049c-ca8f-47d3-ac37-dbe037c634b7")
-	)
-	(junction
 		(at 104.775 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2468,23 +2444,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 76.835) (xy 189.865 76.835)
+			(xy 156.845 76.835) (xy 189.865 76.835)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0439b285-1121-47b1-a689-e6874d39fc5c")
-	)
-	(wire
-		(pts
-			(xy 171.45 111.125) (xy 171.45 122.555)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0765e4cc-da7b-4635-8fde-e103c5e4a267")
 	)
 	(wire
 		(pts
@@ -2535,16 +2501,6 @@
 			(type default)
 		)
 		(uuid "0ff68972-bbf1-463e-9198-375ccdebc874")
-	)
-	(wire
-		(pts
-			(xy 156.21 122.555) (xy 171.45 122.555)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19463855-4ea4-4616-a82d-b3f30086e06a")
 	)
 	(wire
 		(pts
@@ -2618,16 +2574,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 29.21) (xy 176.53 100.965)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "310d2050-52a3-46db-a485-24ebcce4f9f9")
-	)
-	(wire
-		(pts
 			(xy 88.9 77.978) (xy 86.995 77.978)
 		)
 		(stroke
@@ -2688,16 +2634,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 76.835) (xy 171.45 100.965)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55a90995-197a-4dc2-ab68-57ac2bed9012")
-	)
-	(wire
-		(pts
 			(xy 84.963 30.48) (xy 104.775 30.48)
 		)
 		(stroke
@@ -2708,7 +2644,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 29.21) (xy 191.77 29.21)
+			(xy 157.48 29.21) (xy 191.77 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2768,16 +2704,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 113.665) (xy 182.88 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c6e2d97-6818-4fa1-b92c-698b08fb534c")
-	)
-	(wire
-		(pts
 			(xy 104.775 30.48) (xy 135.89 30.48)
 		)
 		(stroke
@@ -2795,26 +2721,6 @@
 			(type default)
 		)
 		(uuid "745f28cb-9007-489c-9f34-a57993b2fce3")
-	)
-	(wire
-		(pts
-			(xy 173.99 111.125) (xy 173.99 113.665)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74ae7610-9975-4bf4-9cfb-43e036d4cf11")
-	)
-	(wire
-		(pts
-			(xy 176.53 111.125) (xy 176.53 161.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7530cf07-1174-484c-8388-407df42d6041")
 	)
 	(wire
 		(pts
@@ -2848,16 +2754,6 @@
 	)
 	(wire
 		(pts
-			(xy 183.515 97.155) (xy 173.99 97.155)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83ff1224-da1c-4cf8-a06a-96006148e3f5")
-	)
-	(wire
-		(pts
 			(xy 104.775 65.405) (xy 104.775 74.295)
 		)
 		(stroke
@@ -2888,16 +2784,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 29.21) (xy 176.53 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e00d5e7-4656-4380-9d6d-2dbe099be5b2")
-	)
-	(wire
-		(pts
 			(xy 60.96 139.065) (xy 60.96 140.335)
 		)
 		(stroke
@@ -2915,16 +2801,6 @@
 			(type default)
 		)
 		(uuid "aa157384-a332-4b96-aa43-616e364af807")
-	)
-	(wire
-		(pts
-			(xy 173.99 113.665) (xy 182.88 113.665)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b385d2b9-6497-430c-bfc6-c98304c6165d")
 	)
 	(wire
 		(pts
@@ -2965,16 +2841,6 @@
 			(type default)
 		)
 		(uuid "b565ddc8-6f05-4449-bc7f-f8edc873cf7e")
-	)
-	(wire
-		(pts
-			(xy 173.99 97.155) (xy 173.99 100.965)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6df47fd-d23f-434d-8a3f-9bcbc3dbf203")
 	)
 	(wire
 		(pts
@@ -3068,23 +2934,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 161.925) (xy 176.53 161.925)
+			(xy 156.21 161.925) (xy 192.532 161.925)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dbf31050-013c-483c-b37a-574fba3062d8")
-	)
-	(wire
-		(pts
-			(xy 176.53 161.925) (xy 192.532 161.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfbf8a5d-e61f-4b8d-b48c-b224f53fb826")
 	)
 	(wire
 		(pts
@@ -3168,17 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.845 76.835) (xy 171.45 76.835)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb8b4dbe-eac6-44ab-bba9-8b5c120e219e")
-	)
-	(wire
-		(pts
-			(xy 171.45 122.555) (xy 192.405 122.555)
+			(xy 156.21 122.555) (xy 192.405 122.555)
 		)
 		(stroke
 			(width 0)
@@ -3301,72 +3147,6 @@
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/4e6489a2-f37d-4c34-b99f-d7711dd1a6f1"
 					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 182.88 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d31c7b1-2893-4aaa-85b0-70c571764227")
-		(property "Reference" "#PWR061"
-			(at 182.88 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 182.88 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 182.88 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "55537e07-79f6-493c-b3f6-a41d6927bd58")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/4e6489a2-f37d-4c34-b99f-d7711dd1a6f1"
-					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -3968,152 +3748,6 @@
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/4e6489a2-f37d-4c34-b99f-d7711dd1a6f1"
 					(reference "U16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:NUP4202")
-		(at 173.99 106.045 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "9fbe06af-753f-4d50-a2f1-68e09ef602ea")
-		(property "Reference" "U15"
-			(at 170.18 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NUP4202"
-			(at 170.18 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 172.72 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF"
-			(at 172.72 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ff3179b-a9a5-4f68-8d71-558be0d3c221")
-		)
-		(pin "2"
-			(uuid "511666a1-1eff-4135-869a-4002dee3433d")
-		)
-		(pin "4"
-			(uuid "02d480fc-591c-4a87-bf71-0f3842c398db")
-		)
-		(pin "3"
-			(uuid "c81aa243-1e03-4f7b-a928-a1a8c08d4fe1")
-		)
-		(pin "5"
-			(uuid "fea08279-b8d1-4f93-b33e-0d95b232ff69")
-		)
-		(pin "6"
-			(uuid "abc054dd-0395-41fb-81dd-93a2ce17f54b")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/4e6489a2-f37d-4c34-b99f-d7711dd1a6f1"
-					(reference "U15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 183.515 97.155 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bed4c327-6e17-48bd-8ef3-9525cb3bb032")
-		(property "Reference" "#PWR060"
-			(at 183.515 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 183.515 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 183.515 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 183.515 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 183.515 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d87089e9-d701-4ed2-9e56-6224dfc78750")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/4e6489a2-f37d-4c34-b99f-d7711dd1a6f1"
-					(reference "#PWR060")
 					(unit 1)
 				)
 			)
