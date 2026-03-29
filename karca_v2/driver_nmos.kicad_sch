@@ -1577,6 +1577,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C20917"
+			(at 73.66 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "738bd5c9-8a81-4584-8aa5-7e9543890e7e")
 		)
@@ -2290,7 +2299,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C727081"
+		(property "LCSC" "C7428238"
 			(at 90.17 44.45 90)
 			(effects
 				(font
@@ -2385,7 +2394,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C55996"
+		(property "LCSC" "C21010"
 			(at 76.2 24.765 0)
 			(effects
 				(font

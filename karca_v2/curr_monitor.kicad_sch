@@ -3523,6 +3523,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C133969"
+			(at 109.22 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1bcb3c2-6319-4914-9fe4-783099821137")
 		)

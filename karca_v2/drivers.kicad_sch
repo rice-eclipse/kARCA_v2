@@ -3858,6 +3858,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C1493"
+			(at 140.335 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "812054f7-4947-4b9a-84af-a430e19a642a")
 		)
@@ -4052,6 +4061,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 140.335 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C872846"
 			(at 140.335 169.545 0)
 			(effects
 				(font

@@ -2021,6 +2021,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C2828898"
+			(at 180.34 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8304e6e-ee83-4d4f-9ac9-89da7174e1bc")
 		)
@@ -2084,6 +2093,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 160.02 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17902"
 			(at 160.02 74.93 0)
 			(effects
 				(font
@@ -2225,6 +2243,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C4410"
+			(at 166.37 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c6752c1f-d093-42dd-b959-91603bd19cb5")
 		)
@@ -2289,6 +2316,15 @@
 		)
 		(property "Description" ""
 			(at 180.34 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C2298"
+			(at 180.34 86.995 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2523,9 +2559,9 @@
 		(at 114.3 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a7e20fc4-97c0-43cc-bdd2-71b05c5c1c9a")
 		(property "Reference" "J12"

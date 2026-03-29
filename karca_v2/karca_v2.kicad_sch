@@ -1819,6 +1819,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C28323"
+			(at 175.26 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2d4694a9-ae65-4cea-bb73-bff55e5f03b0")
 		)
@@ -1885,6 +1894,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C4177"
+			(at 187.96 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2145,6 +2163,15 @@
 		)
 		(property "Description" "4.096V Precision Micropower Shunt Voltage Reference, SOT-23"
 			(at 187.96 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C126807"
+			(at 187.96 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)

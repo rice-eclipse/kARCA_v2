@@ -843,113 +843,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1552,17 +1445,6 @@
 		)
 		(uuid "9dddb6b8-9ce1-4baa-a422-0728d9ed2bcc")
 	)
-	(text "10mOhm, 2W resistor\nPeak current of 8.5A\n0V-0.085V out"
-		(exclude_from_sim no)
-		(at 48.26 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a78c2787-7c13-4d08-b62a-c2e62d173dde")
-	)
 	(text "Voltage Monitoring"
 		(exclude_from_sim no)
 		(at 73.66 107.95 0)
@@ -1657,22 +1539,10 @@
 		(uuid "a6f3b7dd-9c0c-44ad-9b29-b64bcf43b2f7")
 	)
 	(junction
-		(at 130.81 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4cee540-bdc6-4e07-8a9a-68abb5d586d4")
-	)
-	(junction
 		(at 203.2 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdeb5f6a-9011-4370-85f0-621cc9675bca")
-	)
-	(junction
-		(at 142.24 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2726ca4-e2c8-4d25-abdd-732082eebcee")
 	)
 	(no_connect
 		(at 190.5 69.85)
@@ -1890,7 +1760,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 59.69) (xy 179.07 59.69)
+			(xy 127 59.69) (xy 179.07 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1927,16 +1797,6 @@
 			(type default)
 		)
 		(uuid "640a6672-0fc8-412c-ae80-2503171389da")
-	)
-	(wire
-		(pts
-			(xy 127 59.69) (xy 142.24 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64b6d219-c8ef-46f4-9a59-e75535b79e76")
 	)
 	(wire
 		(pts
@@ -2040,16 +1900,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 125.73) (xy 173.99 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "911d2cc5-8893-4462-9d9e-bef0822fe432")
-	)
-	(wire
-		(pts
 			(xy 83.82 67.31) (xy 83.82 72.39)
 		)
 		(stroke
@@ -2080,7 +1930,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 125.73) (xy 130.81 125.73)
+			(xy 118.11 125.73) (xy 173.99 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2452,73 +2302,6 @@
 		(uuid "ec6282e6-08f1-4b82-b3b5-eeaa6fefc792")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 142.24 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c7c1c67-1ac8-47a4-9e51-1165e6e803c6")
-		(property "Reference" "TP57"
-			(at 144.145 55.118 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 144.145 57.658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 147.32 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3da4ca56-08f7-44ab-bc3b-58b179dffb7e")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/d3760e06-a79f-4c5f-b008-48bf6f5622ff/3c219595-0067-45a9-924a-be9e4c3281ae"
-					(reference "TP57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 113.03 116.84 0)
 		(unit 1)
@@ -2631,6 +2414,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 127 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C1848"
 			(at 127 68.58 0)
 			(effects
 				(font
@@ -2904,6 +2696,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C28233"
+			(at 195.58 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9a6d96dc-0069-4820-87bf-f6a97eb61c51")
 		)
@@ -3040,6 +2841,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C316211"
+			(at 41.91 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d04b605d-8137-4edf-973c-0096f3ff0b3e")
 		)
@@ -3101,6 +2911,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 205.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C16939"
 			(at 205.74 69.85 0)
 			(effects
 				(font
@@ -3221,6 +3040,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17900"
+			(at 41.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "28c4e7aa-01fa-44ae-bb97-07819b5c9328")
 		)
@@ -3281,6 +3109,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 86.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C116203"
 			(at 86.36 59.69 0)
 			(effects
 				(font
@@ -3499,6 +3336,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C1525"
+			(at 109.22 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3d661585-d2e5-4ee4-8067-5ace8e382d76")
 		)
@@ -3509,73 +3355,6 @@
 			(project "karca_v2"
 				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/d3760e06-a79f-4c5f-b008-48bf6f5622ff/3c219595-0067-45a9-924a-be9e4c3281ae"
 					(reference "C76")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 130.81 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a245c1e8-c4dc-4ca0-bdf5-f7b43877687e")
-		(property "Reference" "TP58"
-			(at 132.715 121.158 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 132.715 123.698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 135.89 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70189cea-3352-41a0-b1a3-8fa6ea5d051e")
-		)
-		(instances
-			(project "karca_v2"
-				(path "/29cf4797-56f2-4f57-ae95-7df639362e3c/d3760e06-a79f-4c5f-b008-48bf6f5622ff/3c219595-0067-45a9-924a-be9e4c3281ae"
-					(reference "TP58")
 					(unit 1)
 				)
 			)
@@ -3627,6 +3406,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C4366617"
 			(at 107.95 125.73 0)
 			(effects
 				(font
@@ -3911,6 +3699,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C28323"
+			(at 220.345 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "234f42ab-c9e5-4037-93d8-be8fbabfd69d")
 		)
@@ -4047,6 +3844,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C105142"
+			(at 71.12 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4d49e019-6c2b-4e2f-9534-262890ecc5cd")
 		)
@@ -4108,6 +3914,15 @@
 		)
 		(property "Description" ""
 			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C1525"
+			(at 91.44 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4241,6 +4056,15 @@
 		)
 		(property "Description" ""
 			(at 118.11 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C4410"
+			(at 118.11 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)

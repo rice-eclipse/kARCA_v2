@@ -3223,9 +3223,9 @@
 		(at 63.5 147.955 0)
 		(unit 5)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b4086f7-e4e7-4220-9efc-75d39e79e9a3")
 		(property "Reference" "U17"
@@ -3395,12 +3395,13 @@
 		(at 107.315 60.325 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4b8488eb-dca5-4e99-a9e6-d830e71d6d98")
 		(property "Reference" "U14"
-			(at 111.125 52.705 0)
+			(at 114.3 59.0549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +3410,7 @@
 			)
 		)
 		(property "Value" "NUP4202"
-			(at 111.125 55.245 0)
+			(at 114.3 61.5949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,9 +3678,9 @@
 		(at 107.315 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "9d2b7af1-90f7-46b3-aa86-b7a5cb61b105")
 		(property "Reference" "U16"
 			(at 111.125 130.81 0)

@@ -1488,6 +1488,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C25664"
+			(at 205.486 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7818dff4-fd50-445d-8676-f7eba0761be5")
 		)
@@ -1992,6 +2001,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 86.106 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17886"
 			(at 86.106 74.676 0)
 			(effects
 				(font
@@ -2512,6 +2530,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 205.74 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C26032"
 			(at 205.74 98.425 0)
 			(effects
 				(font

@@ -2273,6 +2273,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C2873295"
+			(at 114.3 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "291a9dcd-9cb4-4f9b-b217-5d2989637214")
 		)
@@ -2624,6 +2633,15 @@
 		)
 		(property "Description" ""
 			(at 83.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C25890"
+			(at 83.82 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,6 +3243,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C1346337"
+			(at 87.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "624fb3f6-59f1-42df-93a9-ac5e66200256")
 		)
@@ -3482,6 +3509,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C110052"
+			(at 54.61 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8fd404cf-1972-4ab0-bf18-728a2931f129")
 		)
@@ -3556,6 +3592,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C1881"
 			(at 180.34 87.63 0)
 			(effects
 				(font
@@ -3714,6 +3759,15 @@
 		)
 		(property "Description" ""
 			(at 73.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17930"
+			(at 73.66 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)

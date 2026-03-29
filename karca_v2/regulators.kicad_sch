@@ -3894,6 +3894,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C1880390"
+			(at 261.62 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9dc8015f-61ad-4afc-9cef-05f68215ad64")
 		)
@@ -4378,6 +4387,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C1975229"
+			(at 115.062 97.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "8ab58602-a01e-4b4e-be4e-eebcb0d0185f")
 		)
@@ -4455,6 +4473,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 151.003 99.441 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C4502"
 			(at 151.003 99.441 0)
 			(effects
 				(font
@@ -4816,6 +4843,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" " C2759901"
+			(at 104.14 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e2319188-3cd3-4d39-9751-40403b7d7d7d")
 		)
@@ -4953,6 +4989,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C185323"
+			(at 299.72 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a4c61af-42f1-4326-88e0-a0ee91cbf402")
 		)
@@ -5014,6 +5059,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 241.3 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C15850"
 			(at 241.3 126.365 0)
 			(effects
 				(font
@@ -5629,6 +5683,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C2298"
+			(at 151.003 88.011 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81acf0c2-c43f-4f44-b3aa-e1206fed194d")
 		)
@@ -5769,6 +5832,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C16780"
+			(at 313.055 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "48915ef3-d777-4ba7-841f-119de79bbc65")
 		)
@@ -5810,7 +5882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4020S"
+		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA5040S"
 			(at 289.56 121.285 0)
 			(effects
 				(font
@@ -5830,6 +5902,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 289.56 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C305173"
+			(at 289.56 121.285 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5900,6 +5981,15 @@
 		)
 		(property "Description" ""
 			(at 334.518 125.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C2298"
+			(at 334.518 125.095 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,6 +6133,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C28233"
+			(at 279.4 123.825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ad513b54-8188-4457-91fd-e07345a1e19a")
 		)
@@ -6105,6 +6204,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 299.085 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C15401"
 			(at 299.085 140.335 0)
 			(effects
 				(font
