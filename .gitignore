@@ -1,3 +1,8 @@
 karca-v2_backups/
-*.lck
-*.zip
+**/*.lck
+**/*.zip
+**/*.raw
+**/*.op/raw
+**/*.net
+**/*.plt
+**/*.rtf
