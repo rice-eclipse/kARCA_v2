@@ -1,7 +1,9 @@
-Version 2.1 changes,,,
-"reorganized ADC arrangement  (LCs + TCs, PTs, Monitoring)",,,
-Added dedicated vref for the adcs,,,
-Reduced cutoff frequency to 200Hz ,,,
-Removed extra status leds for mosfets,,,
-Fixed vref for IN-AMPS (precision over adjustability),,,
-Replaced expensive ass power module with a buck converter,,,
+Version 2.1 changes
+"reorganized ADC arrangement  (LCs + TCs, PTs, Monitoring)"
+Added dedicated vref for the adcs
+Reduced cutoff frequency to 200Hz 
+Removed extra status leds for mosfets
+Fixed vref for IN-AMPS with fixed resistors
+Replaced OKW-T/6-W12N power module with AP62300 DC-DC
+Replaced IRF3708 NMOS with AO3400A NMOS
+Added secondary SPI bus for driver current monitoring and battery monitoring
